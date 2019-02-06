@@ -331,6 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.fabric.coffeecoffeecoffee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = "iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -353,6 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.fabric.coffeecoffeecoffee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = "iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
