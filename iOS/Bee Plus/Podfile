@@ -1,0 +1,18 @@
+platform :ios, '12.1'
+
+target 'Bee Plus' do
+  use_frameworks!
+
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+  pod 'RevealingSplashView'
+
+  target 'Bee PlusTests' do
+    inherit! :search_paths
+  end
+
+  target 'Bee PlusUITests' do
+    inherit! :search_paths
+  end
+
+end
