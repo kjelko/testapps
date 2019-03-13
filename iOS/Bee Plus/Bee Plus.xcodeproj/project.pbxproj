@@ -10,7 +10,7 @@
 		11F73F7D509F164477DD37B4 /* Pods_Bee_Plus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE43753609424A51C1BF922 /* Pods_Bee_Plus.framework */; };
 		987AF1486D1E23FA1CBBC5D5 /* Pods_Bee_PlusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2753DC7FA6DFA420E1A5D090 /* Pods_Bee_PlusTests.framework */; };
 		9F1EBA55B06BA30FE9A91379 /* Pods_Bee_PlusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E25C016F09B64094E57B50 /* Pods_Bee_PlusUITests.framework */; };
-		A827658A222D7DE2002F8A18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8276589222D7DE2002F8A18 /* GoogleService-Info.plist */; };
+		A810C7CC22394F11003C4AC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A810C7CB22394F11003C4AC1 /* GoogleService-Info.plist */; };
 		A8841576222BABB40096BFF6 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8841575222BABB40096BFF6 /* QuestionViewController.swift */; };
 		A8930477222A517100E042DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8930476222A517100E042DF /* AppDelegate.swift */; };
 		A8930479222A517100E042DF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8930478222A517100E042DF /* SignInViewController.swift */; };
@@ -42,7 +42,7 @@
 		73AA168C18DE2A9623E637BB /* Pods-Bee Plus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.release.xcconfig"; path = "Target Support Files/Pods-Bee Plus/Pods-Bee Plus.release.xcconfig"; sourceTree = "<group>"; };
 		93E25C016F09B64094E57B50 /* Pods_Bee_PlusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bee_PlusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC8E99785A9B336D6F0642A /* Pods-Bee Plus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.debug.xcconfig"; path = "Target Support Files/Pods-Bee Plus/Pods-Bee Plus.debug.xcconfig"; sourceTree = "<group>"; };
-		A8276589222D7DE2002F8A18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A810C7CB22394F11003C4AC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A8841575222BABB40096BFF6 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		A8930473222A517100E042DF /* Bee Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bee Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8930476222A517100E042DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 		A893046A222A517100E042DF = {
 			isa = PBXGroup;
 			children = (
-				A8276589222D7DE2002F8A18 /* GoogleService-Info.plist */,
+				A810C7CB22394F11003C4AC1 /* GoogleService-Info.plist */,
 				A8930475222A517100E042DF /* Bee Plus */,
 				A893048A222A517200E042DF /* Bee PlusTests */,
 				A8930495222A517200E042DF /* Bee PlusUITests */,
@@ -275,7 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A893047E222A517200E042DF /* Assets.xcassets in Resources */,
-				A827658A222D7DE2002F8A18 /* GoogleService-Info.plist in Resources */,
+				A810C7CC22394F11003C4AC1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,7 +578,9 @@
 			baseConfigurationReference = 9DC8E99785A9B336D6F0642A /* Pods-Bee Plus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = L8VKXC2S77;
 				INFOPLIST_FILE = "Bee Plus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -586,6 +588,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.firebase.Bee-Plus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc dev.firebase.Bee-Plus";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -596,7 +599,9 @@
 			baseConfigurationReference = 73AA168C18DE2A9623E637BB /* Pods-Bee Plus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = L8VKXC2S77;
 				INFOPLIST_FILE = "Bee Plus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -604,6 +609,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.firebase.Bee-Plus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc dev.firebase.Bee-Plus";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
