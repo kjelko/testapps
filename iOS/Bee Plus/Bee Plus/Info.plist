@@ -23,7 +23,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.2810452330-om2ujt7g3e4upbh8is9gdhtkiv38f12b</string>
+				<string>com.googleusercontent.apps.317879417833-2efgsnnqea6bu6g4vs7a85ak6h8m6te1</string>
 			</array>
 		</dict>
 		<dict>
@@ -34,9 +34,10 @@
 				<string>dev.firebase.Bee-Plus</string>
 			</array>
 		</dict>
+		<dict/>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
