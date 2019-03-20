@@ -17,8 +17,32 @@ default_platform(:ios)
 
 platform :ios do
   desc "Builds app for FAD distribution"
-  lane :fad do
-      match(type: "adhoc")
-      gym
+  lane :fad_adhoc do
+      team_id("L8VKXC2S77")
+      match(
+          git_branch: "crashlytics-developer",
+          username: "fad-fastlane@google.com",
+          app_identifier: "dev.firebase.Bee-Plus",
+	  type: "adhoc"
+      )
+      gym(
+          scheme: "Bee Plus",
+          output_name: "Bee Plus Adhoc"
+      )
+  end
+
+  lane :fad_enterprise do
+      team_id("FCAH69RY2W")
+      match(
+          git_branch: "crashlytics-enterprise",
+          username: "fad-fastlane@google.com",
+          app_identifier: "dev.firebase.Bee-Plus-Enterprise",
+          type: "enterprise"
+      )
+      gym(
+          scheme: "Bee Plus Enterprise",
+          export_method: "enterprise",
+          output_name: "Bee Plus Enterprise"
+      )
   end
 end

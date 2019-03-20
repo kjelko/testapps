@@ -1,0 +1,12 @@
+//
+//  Release.xcconfig
+//  Bee Plus
+//
+//  Created by Alex Singer on 3/20/19.
+//  Copyright © 2019 Firebase Dev. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus.release enterprise.xcconfig"

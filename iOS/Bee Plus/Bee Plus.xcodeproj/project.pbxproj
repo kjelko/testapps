@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		11F73F7D509F164477DD37B4 /* Pods_Bee_Plus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE43753609424A51C1BF922 /* Pods_Bee_Plus.framework */; };
 		987AF1486D1E23FA1CBBC5D5 /* Pods_Bee_PlusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2753DC7FA6DFA420E1A5D090 /* Pods_Bee_PlusTests.framework */; };
+		9EED70FE2242000F001ED663 /* Pods-Bee Plus.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9EED70FD2242000E001ED663 /* Pods-Bee Plus.release.xcconfig */; };
+		9EED7102224205BD001ED663 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9EED7101224205BD001ED663 /* Debug.xcconfig */; };
+		9EED7104224205CF001ED663 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9EED7103224205CF001ED663 /* Release.xcconfig */; };
+		9EED710622420614001ED663 /* Debug Enterprise.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9EED710522420614001ED663 /* Debug Enterprise.xcconfig */; };
+		9EED710822420624001ED663 /* Release Enterprise.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9EED710722420623001ED663 /* Release Enterprise.xcconfig */; };
 		9F1EBA55B06BA30FE9A91379 /* Pods_Bee_PlusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E25C016F09B64094E57B50 /* Pods_Bee_PlusUITests.framework */; };
 		A810C7CC22394F11003C4AC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A810C7CB22394F11003C4AC1 /* GoogleService-Info.plist */; };
 		A8841576222BABB40096BFF6 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8841575222BABB40096BFF6 /* QuestionViewController.swift */; };
@@ -37,11 +42,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		149EA2783B0ED6B969685BBB /* Pods-Bee Plus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus.debug.xcconfig"; sourceTree = "<group>"; };
 		2753DC7FA6DFA420E1A5D090 /* Pods_Bee_PlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bee_PlusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3763F8E561F0A54B1BFED841 /* Pods-Bee PlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.release.xcconfig"; sourceTree = "<group>"; };
+		3DF025B39D97CFE1A4969686 /* Pods-Bee PlusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		40E9A8399078AED9410E76FE /* Pods-Bee PlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		44EF85ABE9A02FA1363DA532 /* Pods-Bee PlusTests.release enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.release enterprise.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.release enterprise.xcconfig"; sourceTree = "<group>"; };
 		61846D49F4FD08C430C4DFF2 /* Pods-Bee PlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		73AA168C18DE2A9623E637BB /* Pods-Bee Plus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.release.xcconfig"; path = "Target Support Files/Pods-Bee Plus/Pods-Bee Plus.release.xcconfig"; sourceTree = "<group>"; };
 		93E25C016F09B64094E57B50 /* Pods_Bee_PlusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bee_PlusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC8E99785A9B336D6F0642A /* Pods-Bee Plus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.debug.xcconfig"; path = "Target Support Files/Pods-Bee Plus/Pods-Bee Plus.debug.xcconfig"; sourceTree = "<group>"; };
+		9EED70FD2242000E001ED663 /* Pods-Bee Plus.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.release.xcconfig"; path = "Target Support Files/Pods-Bee Plus/Pods-Bee Plus.release.xcconfig"; sourceTree = "<group>"; };
+		9EED7101224205BD001ED663 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		9EED7103224205CF001ED663 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		9EED710522420614001ED663 /* Debug Enterprise.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug Enterprise.xcconfig"; sourceTree = "<group>"; };
+		9EED710722420623001ED663 /* Release Enterprise.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Release Enterprise.xcconfig"; sourceTree = "<group>"; };
+		A57B76B0D22CDF21EAE3AC3E /* Pods-Bee PlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A810C7CB22394F11003C4AC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A8841575222BABB40096BFF6 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		A8930473222A517100E042DF /* Bee Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bee Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,9 +72,15 @@
 		A8930496222A517200E042DF /* Bee_PlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bee_PlusUITests.swift; sourceTree = "<group>"; };
 		A8930498222A517200E042DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB03A71FD7B1E7C24F54F155 /* Pods-Bee PlusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.release.xcconfig"; path = "Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BC96D208D2921C596AB30210 /* Pods-Bee PlusUITests.release enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.release enterprise.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.release enterprise.xcconfig"; sourceTree = "<group>"; };
+		C2D04403E5F52FF0BCDF482B /* Pods-Bee PlusUITests.debug enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.debug enterprise.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.debug enterprise.xcconfig"; sourceTree = "<group>"; };
+		C8C16D36033B340BA43A7CA1 /* Pods-Bee Plus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus.release.xcconfig"; sourceTree = "<group>"; };
 		DDE43753609424A51C1BF922 /* Pods_Bee_Plus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bee_Plus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E08B09B980B50E7FC9888365 /* Pods-Bee PlusTests.debug enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.debug enterprise.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.debug enterprise.xcconfig"; sourceTree = "<group>"; };
+		E34F4DE0875ED4941FAD61D6 /* Pods-Bee Plus.debug enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.debug enterprise.xcconfig"; path = "Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus.debug enterprise.xcconfig"; sourceTree = "<group>"; };
 		EAC419830C3D60D88099C8DB /* Pods-Bee PlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.release.xcconfig"; path = "Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.release.xcconfig"; sourceTree = "<group>"; };
 		EDFF0917A82DBCB771877446 /* Pods-Bee PlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.debug.xcconfig"; path = "Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F413A739B93118643BB05D6D /* Pods-Bee Plus.release enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.release enterprise.xcconfig"; path = "Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus.release enterprise.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +118,34 @@
 				73AA168C18DE2A9623E637BB /* Pods-Bee Plus.release.xcconfig */,
 				EDFF0917A82DBCB771877446 /* Pods-Bee PlusTests.debug.xcconfig */,
 				EAC419830C3D60D88099C8DB /* Pods-Bee PlusTests.release.xcconfig */,
+				9EED70FD2242000E001ED663 /* Pods-Bee Plus.release.xcconfig */,
 				61846D49F4FD08C430C4DFF2 /* Pods-Bee PlusUITests.debug.xcconfig */,
 				AB03A71FD7B1E7C24F54F155 /* Pods-Bee PlusUITests.release.xcconfig */,
+				149EA2783B0ED6B969685BBB /* Pods-Bee Plus.debug.xcconfig */,
+				E34F4DE0875ED4941FAD61D6 /* Pods-Bee Plus.debug enterprise.xcconfig */,
+				C8C16D36033B340BA43A7CA1 /* Pods-Bee Plus.release.xcconfig */,
+				F413A739B93118643BB05D6D /* Pods-Bee Plus.release enterprise.xcconfig */,
+				40E9A8399078AED9410E76FE /* Pods-Bee PlusTests.debug.xcconfig */,
+				E08B09B980B50E7FC9888365 /* Pods-Bee PlusTests.debug enterprise.xcconfig */,
+				3763F8E561F0A54B1BFED841 /* Pods-Bee PlusTests.release.xcconfig */,
+				44EF85ABE9A02FA1363DA532 /* Pods-Bee PlusTests.release enterprise.xcconfig */,
+				A57B76B0D22CDF21EAE3AC3E /* Pods-Bee PlusUITests.debug.xcconfig */,
+				C2D04403E5F52FF0BCDF482B /* Pods-Bee PlusUITests.debug enterprise.xcconfig */,
+				3DF025B39D97CFE1A4969686 /* Pods-Bee PlusUITests.release.xcconfig */,
+				BC96D208D2921C596AB30210 /* Pods-Bee PlusUITests.release enterprise.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9EED71002242058A001ED663 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9EED7101224205BD001ED663 /* Debug.xcconfig */,
+				9EED7103224205CF001ED663 /* Release.xcconfig */,
+				9EED710522420614001ED663 /* Debug Enterprise.xcconfig */,
+				9EED710722420623001ED663 /* Release Enterprise.xcconfig */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		A893046A222A517100E042DF = {
@@ -128,6 +174,7 @@
 		A8930475222A517100E042DF /* Bee Plus */ = {
 			isa = PBXGroup;
 			children = (
+				9EED71002242058A001ED663 /* Config */,
 				A8930476222A517100E042DF /* AppDelegate.swift */,
 				A8930478222A517100E042DF /* SignInViewController.swift */,
 				A8841575222BABB40096BFF6 /* QuestionViewController.swift */,
@@ -274,8 +321,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EED710622420614001ED663 /* Debug Enterprise.xcconfig in Resources */,
+				9EED7102224205BD001ED663 /* Debug.xcconfig in Resources */,
+				9EED70FE2242000F001ED663 /* Pods-Bee Plus.release.xcconfig in Resources */,
+				9EED710822420624001ED663 /* Release Enterprise.xcconfig in Resources */,
 				A893047E222A517200E042DF /* Assets.xcassets in Resources */,
 				A810C7CC22394F11003C4AC1 /* GoogleService-Info.plist in Resources */,
+				9EED7104224205CF001ED663 /* Release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +378,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
@@ -343,7 +395,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C498A9AC3F66AF4007960160 /* [CP] Copy Pods Resources */ = {
@@ -354,7 +406,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-resources.sh",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -365,7 +417,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CBCEFCA4E0F20B01A4AE4FA5 /* [CP] Check Pods Manifest.lock */ = {
@@ -457,8 +509,251 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		9EED70EC2241E25F001ED663 /* Release Enterprise */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EED710722420623001ED663 /* Release Enterprise.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Enterprise";
+		};
+		9EED70ED2241E25F001ED663 /* Release Enterprise */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EED710722420623001ED663 /* Release Enterprise.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FCAH69RY2W;
+				INFOPLIST_FILE = "Bee Plus/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.firebase.Bee-Plus-Enterprise";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match InHouse dev.firebase.Bee-Plus-Enterprise";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release Enterprise";
+		};
+		9EED70EE2241E25F001ED663 /* Release Enterprise */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44EF85ABE9A02FA1363DA532 /* Pods-Bee PlusTests.release enterprise.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bee PlusTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.firebase.Bee-PlusTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bee Plus.app/Bee Plus";
+			};
+			name = "Release Enterprise";
+		};
+		9EED70EF2241E25F001ED663 /* Release Enterprise */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC96D208D2921C596AB30210 /* Pods-Bee PlusUITests.release enterprise.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bee PlusUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.firebase.Bee-PlusUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bee Plus";
+			};
+			name = "Release Enterprise";
+		};
+		9EED70F02241E2A2001ED663 /* Debug Enterprise */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EED710522420614001ED663 /* Debug Enterprise.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Enterprise";
+		};
+		9EED70F12241E2A2001ED663 /* Debug Enterprise */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EED710522420614001ED663 /* Debug Enterprise.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FCAH69RY2W;
+				INFOPLIST_FILE = "Bee Plus/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.firebase.Bee-Plus-Enterprise";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match InHouse dev.firebase.Bee-Plus-Enterprise";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Enterprise";
+		};
+		9EED70F22241E2A2001ED663 /* Debug Enterprise */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E08B09B980B50E7FC9888365 /* Pods-Bee PlusTests.debug enterprise.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bee PlusTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.firebase.Bee-PlusTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bee Plus.app/Bee Plus";
+			};
+			name = "Debug Enterprise";
+		};
+		9EED70F32241E2A2001ED663 /* Debug Enterprise */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2D04403E5F52FF0BCDF482B /* Pods-Bee PlusUITests.debug enterprise.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bee PlusUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.firebase.Bee-PlusUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bee Plus";
+			};
+			name = "Debug Enterprise";
+		};
 		A8930499222A517200E042DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EED7101224205BD001ED663 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -520,6 +815,7 @@
 		};
 		A893049A222A517200E042DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EED7103224205CF001ED663 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -575,7 +871,7 @@
 		};
 		A893049C222A517200E042DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DC8E99785A9B336D6F0642A /* Pods-Bee Plus.debug.xcconfig */;
+			baseConfigurationReference = 9EED7101224205BD001ED663 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -596,7 +892,7 @@
 		};
 		A893049D222A517200E042DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73AA168C18DE2A9623E637BB /* Pods-Bee Plus.release.xcconfig */;
+			baseConfigurationReference = 9EED7103224205CF001ED663 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -617,7 +913,7 @@
 		};
 		A893049F222A517200E042DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDFF0917A82DBCB771877446 /* Pods-Bee PlusTests.debug.xcconfig */;
+			baseConfigurationReference = 40E9A8399078AED9410E76FE /* Pods-Bee PlusTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -638,7 +934,7 @@
 		};
 		A89304A0222A517200E042DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAC419830C3D60D88099C8DB /* Pods-Bee PlusTests.release.xcconfig */;
+			baseConfigurationReference = 3763F8E561F0A54B1BFED841 /* Pods-Bee PlusTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -659,7 +955,7 @@
 		};
 		A89304A2222A517200E042DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61846D49F4FD08C430C4DFF2 /* Pods-Bee PlusUITests.debug.xcconfig */;
+			baseConfigurationReference = A57B76B0D22CDF21EAE3AC3E /* Pods-Bee PlusUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -679,7 +975,7 @@
 		};
 		A89304A3222A517200E042DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB03A71FD7B1E7C24F54F155 /* Pods-Bee PlusUITests.release.xcconfig */;
+			baseConfigurationReference = 3DF025B39D97CFE1A4969686 /* Pods-Bee PlusUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -704,7 +1000,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A8930499222A517200E042DF /* Debug */,
+				9EED70F02241E2A2001ED663 /* Debug Enterprise */,
 				A893049A222A517200E042DF /* Release */,
+				9EED70EC2241E25F001ED663 /* Release Enterprise */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -713,7 +1011,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A893049C222A517200E042DF /* Debug */,
+				9EED70F12241E2A2001ED663 /* Debug Enterprise */,
 				A893049D222A517200E042DF /* Release */,
+				9EED70ED2241E25F001ED663 /* Release Enterprise */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -722,7 +1022,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A893049F222A517200E042DF /* Debug */,
+				9EED70F22241E2A2001ED663 /* Debug Enterprise */,
 				A89304A0222A517200E042DF /* Release */,
+				9EED70EE2241E25F001ED663 /* Release Enterprise */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -731,7 +1033,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A89304A2222A517200E042DF /* Debug */,
+				9EED70F32241E2A2001ED663 /* Debug Enterprise */,
 				A89304A3222A517200E042DF /* Release */,
+				9EED70EF2241E25F001ED663 /* Release Enterprise */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
