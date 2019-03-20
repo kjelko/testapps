@@ -24,5 +24,42 @@ After this, you'l need to open the .xcworkspace in Xcode and lastly, copy in you
 
 ### Distributing
 
-TBD
+#### First time setup
+
+Install fastlane:
+
+```
+sudo gem install fastlane -NV
+```
+
+Copy the team certificates & provisioning profiles to your keychain. From the project directory run:
+
+```
+fastlane match adhoc
+```
+
+and
+
+```
+fastlane match enterprise
+```
+
+#### Generate an Adhoc .ipa
+
+```
+fastlane fad_adhoc
+```
+
+#### Generate an Enterprise .ipa
+
+```
+fastlane fad_enterprise
+```
+
+#### Distribute
+
+Locate the generated .ipa and upload via App Distribution.
+
+
+
 
