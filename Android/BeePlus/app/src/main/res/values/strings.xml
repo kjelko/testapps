@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bee Plus</string>
+    <string name="oauth_client_id">317879417833-3207l2k3t2ec8cftissfv5ek15rti4ub.apps.googleusercontent.com</string>
+    <!--
+    <string name="oauth_client_id">110475074574-u1p25i6c1ocimg0qf00535dmt1ooljv0.apps.googleusercontent.com</string>
+    -->
+</resources>
