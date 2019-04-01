@@ -20,28 +20,20 @@ First, you'll need to install the required cocoapods:
 pod install
 ```
 
-After this, you'l need to open the .xcworkspace in Xcode and lastly, copy in your GoogleService-Info.plist file from Firebase
-
 ### Distributing
 
 #### First time setup
+
+Install Xcode command line tools:
+
+```
+xcode-select --install
+```
 
 Install fastlane:
 
 ```
 sudo gem install fastlane -NV
-```
-
-Copy the team certificates & provisioning profiles to your keychain. From the project directory run:
-
-```
-fastlane match adhoc
-```
-
-and
-
-```
-fastlane match enterprise
 ```
 
 #### Generate an Adhoc .ipa
@@ -55,6 +47,10 @@ fastlane fad_adhoc
 ```
 fastlane fad_enterprise
 ```
+
+When prompted for the certificate password, use the password for MallardCrashApple from valentine.
+
+When prompted for the fad-fastlane@google.com password, get the password from valentine.
 
 #### Distribute
 
