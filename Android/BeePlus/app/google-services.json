@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "317879417833",
+    "firebase_url": "https://fadapps-2a288.firebaseio.com",
+    "project_id": "fadapps-2a288",
+    "storage_bucket": "fadapps-2a288.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317879417833:android:c883034d281eb56a",
+        "android_client_info": {
+          "package_name": "dev.firebase.beeplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317879417833-h2q43gpgu2q0ag7ogdvnsjp9lgknehaq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.firebase.beeplus",
+            "certificate_hash": "85d7a1da0225e04878c1c3668b799cc65b42ac45"
+          }
+        },
+        {
+          "client_id": "317879417833-3207l2k3t2ec8cftissfv5ek15rti4ub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8ZVTyfYTTp_HCalrWLZOTFnu0upwWK0E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317879417833-3207l2k3t2ec8cftissfv5ek15rti4ub.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "317879417833-2efgsnnqea6bu6g4vs7a85ak6h8m6te1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "dev.firebase.Bee-Plus"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
