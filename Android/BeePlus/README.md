@@ -7,7 +7,7 @@ Bee Plus is a low-quality quiz app that shows a picture and allows you to guess 
 3. (OPTIONAL) Update the four answer options at [app/src/main/res/layout/activity_main.xml](https://github.com/crashlytics/app-distro-apps/blob/174ab77e9bb1bf9ee0eff60ff887b15bb9dae2fa/Android/BeePlus/app/src/main/res/layout/activity_main.xml#L34-L72).
 4. Create a PR and submit the above changes.
 
-## Build a new APK
+## Building a new APK
 1. After updating the version, click on Build > Build Bundle(s) / APK(s) > Build APK(s).
 2. Once the build is complete, a pop-up will appear in the bottom-right corner. Click "Locate" to see the `app-debug.apk` file that was generated. You'll upload this file in the next section.
 
