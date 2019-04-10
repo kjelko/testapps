@@ -18,7 +18,7 @@ Then, you'll need to install the required cocoapods:
 pod install
 ```
 
-### Building
+### Building the app
 
 #### First time setup
 
@@ -56,31 +56,49 @@ Locate the generated .ipa and upload via App Distribution.
 
 ### Firebase CLI
 
-#### Setup
-Install the latest version of the App Distro Firebase CLI. This script pulls down our FAD-version of the Firebase CLI and packages it into a binary.
+#### Installing
+
+Install the latest version of the App Distro Firebase CLI.
 ```
-# At the top level of the iOS Bee Plus directory
 ./firepit-macos
 ```
 
-To get an updated version of the FAD Firebase CLI, you'll need to clear the Firebase cache and the npm cache, and then re-run `./firepit-macos`. This is a temporary solution only. The Firebase CLI team is working on adding a command to do this automatically.
-```
-rm -r ~/.cache/firebase
-npm cache clean --force
-```
+This script pulls down our FAD-version of the Firebase CLI and packages it into a binary. It's located at the top level of the iOS Bee Plus directory. If you don't see it, you might need to re-pull this repo.
 
-After that, the Firebase CLI should be installed. If you run `firebase` and don't see anything, you may need to update your PATH.
+#### Distributing
 
-#### Uploading a distribution
 Log in to the Firebase CLI.
 ```
-firebase login
+./firepit-macos login
 ```
 
-Run the app distro command. The `--distribution-path` and `google-services-path` options are required. Run `firebase appdistro:distribute --help` for more param options.
+Run the app distro command. See below for command line options.
 ```
-# Example: 
-# firebase appdistro:distribute --distribution-path adhoc.ipa --google-services-path GoogleService-Info.plist --release-notes-path path/to/release-notes.txt --testers "mallardcrash@gmail.com,rebeccahe@google.com"
+./firepit-macos appdistro:distribute
+```
 
-firebase appdistro:distribute
+Option | Required | Description
+------ | --------- | -----------
+distribution-path | Yes | Path to the IPA or APK to distribute
+google-services-path | Yes | Path to the GoogleService-Info.plist or google-services.json file for your Firebase app
+release-notes | No | Release notes to include with this distribution
+release-notes-path | No | Path to file with release notes to include with this distribution
+testers | No | A comma separated list of tester emails to distribute to
+testers-path | No | Path to file with a comma separated list of tester emails to distribute to
+groups | No | A comma separated list of group aliases to distribute to
+groups-path | No | Path to file with a comma separated list of group aliases to distribute
+
+Example:
 ```
+./firepit-macos appdistro:distribute --distribution-path beeplus.ipa --google-services-path GoogleService-Info.plist --release-notes "Uploading from the Firebase CLI" --groups "firebase-app-distro"
+```
+
+#### (Optional) Updating the CLI
+When you run `./firepit-macos`, the npm and firebase packages get cached. If a new version of the App Distro Firebase CLI gets published, you need to run the following commands to get the updated verison.
+```
+rm -r ~/.cache/firebase     # clears Firebase cache
+npm cache clean --force     # clears npm cache
+./firepit-macos             # Re-installs the Firebase CLI binary
+```
+
+This is a temporary solution only. The Firebase CLI team is working on adding a command to do this automatically.
