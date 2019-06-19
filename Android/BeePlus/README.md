@@ -12,7 +12,7 @@ Bee Plus is a low-quality quiz app that shows a picture and allows you to guess 
 2. Once the build is complete, a pop-up will appear in the bottom-right corner. Click "Locate" to see the `app-debug.apk` file that was generated. You'll upload this file in the next section.
 
 ## Distributing via Firebase Console
-1. Make sure you have access to the FadApps project in Firebase. This will give you access to the [App Distribution dashboard (Bee Plus Android)](http://firebase/u/0/project/fadapps-2a288/appdistribution/app/android:dev.firebase.beeplus/releases).
+1. Make sure you have access to the FadApps project in Firebase. This will give you access to the [App Distribution dashboard (Bee Plus Android)](https://firebase.corp.google.com/u/0/project/fad-test-apps/appdistribution/app/android:dev.firebase.beeplus/releases).
 2. Upload the APK that you generated in the previous section through the Firebase Console.
 
 ## Distributing via Gradle
