@@ -1,0 +1,89 @@
+{
+  "project_info": {
+    "project_number": "461235515410",
+    "firebase_url": "https://fad-test-apps.firebaseio.com",
+    "project_id": "fad-test-apps",
+    "storage_bucket": "fad-test-apps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461235515410:android:c883034d281eb56a",
+        "android_client_info": {
+          "package_name": "dev.firebase.beeplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461235515410-44mo2geli5hmj5le8ovh4450a0ecenkj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDA7fZZl2z4knTTXaQe5aQhoODntBC2D0"
+        },
+        {
+          "current_key": "AIzaSyDDA7fZZl2z4knTTXaQe5aQhoODntBC2D0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461235515410-44mo2geli5hmj5le8ovh4450a0ecenkj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "461235515410-f0r8sugkkorpjck1otoqvluqklauovk2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.test.beeplus"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461235515410:android:0dc74632307da5f7bfe8cb",
+        "android_client_info": {
+          "package_name": "dev.firstbase.testapps.versionmonster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461235515410-44mo2geli5hmj5le8ovh4450a0ecenkj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDA7fZZl2z4knTTXaQe5aQhoODntBC2D0"
+        },
+        {
+          "current_key": "AIzaSyDDA7fZZl2z4knTTXaQe5aQhoODntBC2D0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461235515410-44mo2geli5hmj5le8ovh4450a0ecenkj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "461235515410-f0r8sugkkorpjck1otoqvluqklauovk2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.test.beeplus"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

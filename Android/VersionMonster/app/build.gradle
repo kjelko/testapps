@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.firebase.appdistribution'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('/usr/local/google/home/samphillips/crashlytics/app-distro-apps/Android/VersionMonster/keystore.jks')
+            storePassword 'sesquipedalian'
+            keyAlias = 'key0'
+            keyPassword 'sesquipedalian'
+        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "dev.firstbase.testapps.versionmonster"
+        minSdkVersion 16
+        targetSdkVersion 29
+
+        // Please keep versionCode fixed so we can test duplicated versions
+        versionCode 60606060
+
+        versionName "syzygy"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            firebaseAppDistribution {
+                releaseNotes="Today's word: syzygy"
+                testers="redhorsebubbles@gmail.com, mallardcrash@gmail.com"
+            }
+
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+}
+
+buildscript {
+    repositories {
+        google()
+    }
+    dependencies {
+        classpath 'com.google.firebase:firebase-appdistribution-gradle:1.0.0'
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'
