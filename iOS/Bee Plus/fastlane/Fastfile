@@ -20,7 +20,6 @@ platform :ios do
   lane :fad_adhoc do
       team_id("L8VKXC2S77")
       match(
-          git_branch: "crashlytics-developer",
           username: "fad-fastlane@google.com",
           app_identifier: "dev.firebase.Bee-Plus",
 	  type: "adhoc"
@@ -34,7 +33,6 @@ platform :ios do
   lane :fad_enterprise do
       team_id("FCAH69RY2W")
       match(
-          git_branch: "crashlytics-enterprise",
           username: "fad-fastlane@google.com",
           app_identifier: "dev.firebase.Bee-Plus-Enterprise",
           type: "enterprise"
