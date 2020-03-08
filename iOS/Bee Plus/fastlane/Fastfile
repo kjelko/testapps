@@ -1,23 +1,9 @@
-# This file contains the fastlane.tools configuration
-# You can find the documentation at https://docs.fastlane.tools
-#
-# For a list of all available actions, check out
-#
-#     https://docs.fastlane.tools/actions
-#
-# For a list of all available plugins, check out
-#
-#     https://docs.fastlane.tools/plugins/available-plugins
-#
-
-# Uncomment the line if you want fastlane to automatically update itself
-# update_fastlane
 
 default_platform(:ios)
 
 platform :ios do
-  desc "Builds app for FAD distribution"
-  lane :fad_adhoc do
+  lane :build_adhoc do
+      puts "Building adhoc app..."
       team_id("L8VKXC2S77")
       match(
           username: "fad-fastlane@google.com",
@@ -30,7 +16,8 @@ platform :ios do
       )
   end
 
-  lane :fad_enterprise do
+  lane :build_enterprise do
+      puts "Building enterprise app..."
       team_id("FCAH69RY2W")
       match(
           username: "fad-fastlane@google.com",
@@ -41,6 +28,22 @@ platform :ios do
           scheme: "Bee Plus Enterprise",
           export_method: "enterprise",
           output_name: "Bee Plus Enterprise"
+      )
+  end
+
+  lane :fad_distribute do |options|
+      if options[:type] == 'enterprise'
+          build_enterprise
+          puts "Distributing enterprise app to App Distribution..."
+      else
+  	  build_adhoc
+          puts "Distributing adhoc app to App Distribution..."
+      end
+
+      firebase_app_distribution(
+          app: "1:461235515410:ios:bcc2b167a9d6b3e0bfe8cb",
+          testers: "mallardcrash@gmail.com",
+          release_notes: options[:release_notes]      
       )
   end
 end
