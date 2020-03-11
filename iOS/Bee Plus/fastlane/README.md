@@ -16,14 +16,19 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## iOS
-### ios fad_adhoc
+### ios build_adhoc
 ```
-fastlane ios fad_adhoc
+fastlane ios build_adhoc
 ```
-Builds app for FAD distribution
-### ios fad_enterprise
+
+### ios build_enterprise
 ```
-fastlane ios fad_enterprise
+fastlane ios build_enterprise
+```
+
+### ios fad_distribute
+```
+fastlane ios fad_distribute
 ```
 
 

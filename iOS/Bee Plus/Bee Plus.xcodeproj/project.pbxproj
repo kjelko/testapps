@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		11F73F7D509F164477DD37B4 /* Pods_Bee_Plus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE43753609424A51C1BF922 /* Pods_Bee_Plus.framework */; };
 		987AF1486D1E23FA1CBBC5D5 /* Pods_Bee_PlusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2753DC7FA6DFA420E1A5D090 /* Pods_Bee_PlusTests.framework */; };
+		9E546C49241587A7007DBACC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E546C48241587A7007DBACC /* GoogleService-Info.plist */; };
 		9EED70FE2242000F001ED663 /* Pods-Bee Plus.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9EED70FD2242000E001ED663 /* Pods-Bee Plus.release.xcconfig */; };
 		9EED7102224205BD001ED663 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9EED7101224205BD001ED663 /* Debug.xcconfig */; };
 		9EED7104224205CF001ED663 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9EED7103224205CF001ED663 /* Release.xcconfig */; };
 		9EED710622420614001ED663 /* Debug Enterprise.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9EED710522420614001ED663 /* Debug Enterprise.xcconfig */; };
 		9EED710822420624001ED663 /* Release Enterprise.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9EED710722420623001ED663 /* Release Enterprise.xcconfig */; };
 		9F1EBA55B06BA30FE9A91379 /* Pods_Bee_PlusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E25C016F09B64094E57B50 /* Pods_Bee_PlusUITests.framework */; };
-		A810C7CC22394F11003C4AC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A810C7CB22394F11003C4AC1 /* GoogleService-Info.plist */; };
 		A8841576222BABB40096BFF6 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8841575222BABB40096BFF6 /* QuestionViewController.swift */; };
 		A8930477222A517100E042DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8930476222A517100E042DF /* AppDelegate.swift */; };
 		A8930479222A517100E042DF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8930478222A517100E042DF /* SignInViewController.swift */; };
@@ -52,13 +52,13 @@
 		73AA168C18DE2A9623E637BB /* Pods-Bee Plus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.release.xcconfig"; path = "Target Support Files/Pods-Bee Plus/Pods-Bee Plus.release.xcconfig"; sourceTree = "<group>"; };
 		93E25C016F09B64094E57B50 /* Pods_Bee_PlusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bee_PlusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC8E99785A9B336D6F0642A /* Pods-Bee Plus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.debug.xcconfig"; path = "Target Support Files/Pods-Bee Plus/Pods-Bee Plus.debug.xcconfig"; sourceTree = "<group>"; };
+		9E546C48241587A7007DBACC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9EED70FD2242000E001ED663 /* Pods-Bee Plus.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.release.xcconfig"; path = "Target Support Files/Pods-Bee Plus/Pods-Bee Plus.release.xcconfig"; sourceTree = "<group>"; };
 		9EED7101224205BD001ED663 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		9EED7103224205CF001ED663 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		9EED710522420614001ED663 /* Debug Enterprise.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug Enterprise.xcconfig"; sourceTree = "<group>"; };
 		9EED710722420623001ED663 /* Release Enterprise.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Release Enterprise.xcconfig"; sourceTree = "<group>"; };
 		A57B76B0D22CDF21EAE3AC3E /* Pods-Bee PlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A810C7CB22394F11003C4AC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A8841575222BABB40096BFF6 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		A8930473222A517100E042DF /* Bee Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bee Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8930476222A517100E042DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,7 +151,6 @@
 		A893046A222A517100E042DF = {
 			isa = PBXGroup;
 			children = (
-				A810C7CB22394F11003C4AC1 /* GoogleService-Info.plist */,
 				A8930475222A517100E042DF /* Bee Plus */,
 				A893048A222A517200E042DF /* Bee PlusTests */,
 				A8930495222A517200E042DF /* Bee PlusUITests */,
@@ -174,6 +173,7 @@
 		A8930475222A517100E042DF /* Bee Plus */ = {
 			isa = PBXGroup;
 			children = (
+				9E546C48241587A7007DBACC /* GoogleService-Info.plist */,
 				9EED71002242058A001ED663 /* Config */,
 				A8930476222A517100E042DF /* AppDelegate.swift */,
 				A8930478222A517100E042DF /* SignInViewController.swift */,
@@ -326,8 +326,8 @@
 				9EED70FE2242000F001ED663 /* Pods-Bee Plus.release.xcconfig in Resources */,
 				9EED710822420624001ED663 /* Release Enterprise.xcconfig in Resources */,
 				A893047E222A517200E042DF /* Assets.xcassets in Resources */,
-				A810C7CC22394F11003C4AC1 /* GoogleService-Info.plist in Resources */,
 				9EED7104224205CF001ED663 /* Release.xcconfig in Resources */,
+				9E546C49241587A7007DBACC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +572,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = FCAH69RY2W;
 				INFOPLIST_FILE = "Bee Plus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -696,6 +697,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = FCAH69RY2W;
 				INFOPLIST_FILE = "Bee Plus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -876,6 +878,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = L8VKXC2S77;
 				INFOPLIST_FILE = "Bee Plus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -897,6 +900,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = L8VKXC2S77;
 				INFOPLIST_FILE = "Bee Plus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

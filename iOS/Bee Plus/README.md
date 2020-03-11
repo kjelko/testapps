@@ -37,13 +37,13 @@ sudo gem install fastlane -NV
 #### Generate an Adhoc .ipa
 
 ```
-fastlane fad_adhoc
+fastlane build_adhoc
 ```
 
 #### Generate an Enterprise .ipa
 
 ```
-fastlane fad_enterprise
+fastlane build_enterprise
 ```
 
 When prompted for the certificate password, use the password for MallardCrashApple from valentine.
@@ -71,6 +71,28 @@ Log in to the Firebase CLI.
 ```
 ./firepit-macos login
 ```
+
+##### Using fastlane
+
+Install the App Distribution fastlane plugin.
+```
+fastlane install_plugins
+```
+
+Run the fastlane command from the project directory.
+```
+# To build and distribute an Adhoc app
+fastlane fad_distribute
+```
+
+Or
+
+```
+# To build and distribute an Enterprise app
+fastlane fad_distribute type:"enterprise"
+```
+
+##### Using Firebase CLI
 
 Run the app distro command. See below for command line options.
 ```
