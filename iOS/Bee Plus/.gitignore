@@ -1,2 +1,7 @@
 ## User settings
 xcuserdata/
+
+## DSStore files
+.DS_Store
+
+Pods/
