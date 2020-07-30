@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>461235515410-ra4154a5r8056gpe4d88b49i22rrd5t2.apps.googleusercontent.com</string>
+	<string>461235515410-nv8tvcrl27ovdqvf20fq25udvrn03l31.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.461235515410-ra4154a5r8056gpe4d88b49i22rrd5t2</string>
+	<string>com.googleusercontent.apps.461235515410-nv8tvcrl27ovdqvf20fq25udvrn03l31</string>
 	<key>API_KEY</key>
 	<string>AIzaSyD10x5LBCng4zQwGxhRnUfhDv5W_j9YgWM</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>dev.firebase.Bee-Plus</string>
+	<string>dev.firebase.Bee-Plus-Enterprise</string>
 	<key>PROJECT_ID</key>
 	<string>fad-test-apps</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:461235515410:ios:bcc2b167a9d6b3e0bfe8cb</string>
+	<string>1:461235515410:ios:1417e7b887ae94c9bfe8cb</string>
 	<key>DATABASE_URL</key>
 	<string>https://fad-test-apps.firebaseio.com</string>
 </dict>
