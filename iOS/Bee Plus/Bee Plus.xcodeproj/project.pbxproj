@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,9 +16,8 @@
 		9EED710622420614001ED663 /* Debug Enterprise.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9EED710522420614001ED663 /* Debug Enterprise.xcconfig */; };
 		9EED710822420624001ED663 /* Release Enterprise.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9EED710722420623001ED663 /* Release Enterprise.xcconfig */; };
 		9F1EBA55B06BA30FE9A91379 /* Pods_Bee_PlusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E25C016F09B64094E57B50 /* Pods_Bee_PlusUITests.framework */; };
-		A8841576222BABB40096BFF6 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8841575222BABB40096BFF6 /* QuestionViewController.swift */; };
 		A8930477222A517100E042DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8930476222A517100E042DF /* AppDelegate.swift */; };
-		A8930479222A517100E042DF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8930478222A517100E042DF /* SignInViewController.swift */; };
+		A8930479222A517100E042DF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8930478222A517100E042DF /* MainViewController.swift */; };
 		A893047E222A517200E042DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A893047D222A517200E042DF /* Assets.xcassets */; };
 		A893048C222A517200E042DF /* Bee_PlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893048B222A517200E042DF /* Bee_PlusTests.swift */; };
 		A8930497222A517200E042DF /* Bee_PlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8930496222A517200E042DF /* Bee_PlusUITests.swift */; };
@@ -47,7 +46,7 @@
 		3763F8E561F0A54B1BFED841 /* Pods-Bee PlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.release.xcconfig"; sourceTree = "<group>"; };
 		3DF025B39D97CFE1A4969686 /* Pods-Bee PlusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.release.xcconfig"; sourceTree = "<group>"; };
 		40E9A8399078AED9410E76FE /* Pods-Bee PlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.debug.xcconfig"; sourceTree = "<group>"; };
-		44EF85ABE9A02FA1363DA532 /* Pods-Bee PlusTests.release enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.release enterprise.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.release enterprise.xcconfig"; sourceTree = "<group>"; };
+		44EF85ABE9A02FA1363DA532 /* Pods-Bee PlusTests.release enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.release enterprise.xcconfig"; path = "Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.release enterprise.xcconfig"; sourceTree = "<group>"; };
 		61846D49F4FD08C430C4DFF2 /* Pods-Bee PlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		73AA168C18DE2A9623E637BB /* Pods-Bee Plus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.release.xcconfig"; path = "Target Support Files/Pods-Bee Plus/Pods-Bee Plus.release.xcconfig"; sourceTree = "<group>"; };
 		93E25C016F09B64094E57B50 /* Pods_Bee_PlusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bee_PlusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,10 +58,9 @@
 		9EED710522420614001ED663 /* Debug Enterprise.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug Enterprise.xcconfig"; sourceTree = "<group>"; };
 		9EED710722420623001ED663 /* Release Enterprise.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Release Enterprise.xcconfig"; sourceTree = "<group>"; };
 		A57B76B0D22CDF21EAE3AC3E /* Pods-Bee PlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A8841575222BABB40096BFF6 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		A8930473222A517100E042DF /* Bee Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bee Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8930476222A517100E042DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A8930478222A517100E042DF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		A8930478222A517100E042DF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A893047D222A517200E042DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8930482222A517200E042DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8930487222A517200E042DF /* Bee PlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bee PlusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,15 +70,15 @@
 		A8930496222A517200E042DF /* Bee_PlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bee_PlusUITests.swift; sourceTree = "<group>"; };
 		A8930498222A517200E042DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB03A71FD7B1E7C24F54F155 /* Pods-Bee PlusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.release.xcconfig"; path = "Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.release.xcconfig"; sourceTree = "<group>"; };
-		BC96D208D2921C596AB30210 /* Pods-Bee PlusUITests.release enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.release enterprise.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.release enterprise.xcconfig"; sourceTree = "<group>"; };
-		C2D04403E5F52FF0BCDF482B /* Pods-Bee PlusUITests.debug enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.debug enterprise.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.debug enterprise.xcconfig"; sourceTree = "<group>"; };
+		BC96D208D2921C596AB30210 /* Pods-Bee PlusUITests.release enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.release enterprise.xcconfig"; path = "Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.release enterprise.xcconfig"; sourceTree = "<group>"; };
+		C2D04403E5F52FF0BCDF482B /* Pods-Bee PlusUITests.debug enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.debug enterprise.xcconfig"; path = "Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.debug enterprise.xcconfig"; sourceTree = "<group>"; };
 		C8C16D36033B340BA43A7CA1 /* Pods-Bee Plus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus.release.xcconfig"; sourceTree = "<group>"; };
 		DDE43753609424A51C1BF922 /* Pods_Bee_Plus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bee_Plus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E08B09B980B50E7FC9888365 /* Pods-Bee PlusTests.debug enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.debug enterprise.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.debug enterprise.xcconfig"; sourceTree = "<group>"; };
-		E34F4DE0875ED4941FAD61D6 /* Pods-Bee Plus.debug enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.debug enterprise.xcconfig"; path = "Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus.debug enterprise.xcconfig"; sourceTree = "<group>"; };
+		E08B09B980B50E7FC9888365 /* Pods-Bee PlusTests.debug enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.debug enterprise.xcconfig"; path = "Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.debug enterprise.xcconfig"; sourceTree = "<group>"; };
+		E34F4DE0875ED4941FAD61D6 /* Pods-Bee Plus.debug enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.debug enterprise.xcconfig"; path = "Target Support Files/Pods-Bee Plus/Pods-Bee Plus.debug enterprise.xcconfig"; sourceTree = "<group>"; };
 		EAC419830C3D60D88099C8DB /* Pods-Bee PlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.release.xcconfig"; path = "Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.release.xcconfig"; sourceTree = "<group>"; };
 		EDFF0917A82DBCB771877446 /* Pods-Bee PlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.debug.xcconfig"; path = "Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F413A739B93118643BB05D6D /* Pods-Bee Plus.release enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.release enterprise.xcconfig"; path = "Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus.release enterprise.xcconfig"; sourceTree = "<group>"; };
+		F413A739B93118643BB05D6D /* Pods-Bee Plus.release enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.release enterprise.xcconfig"; path = "Target Support Files/Pods-Bee Plus/Pods-Bee Plus.release enterprise.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,8 +174,7 @@
 				9E546C48241587A7007DBACC /* GoogleService-Info.plist */,
 				9EED71002242058A001ED663 /* Config */,
 				A8930476222A517100E042DF /* AppDelegate.swift */,
-				A8930478222A517100E042DF /* SignInViewController.swift */,
-				A8841575222BABB40096BFF6 /* QuestionViewController.swift */,
+				A8930478222A517100E042DF /* MainViewController.swift */,
 				A893047D222A517200E042DF /* Assets.xcassets */,
 				A8930482222A517200E042DF /* Info.plist */,
 			);
@@ -376,26 +373,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C498A9AC3F66AF4007960160 /* [CP] Copy Pods Resources */ = {
@@ -404,20 +390,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CBCEFCA4E0F20B01A4AE4FA5 /* [CP] Check Pods Manifest.lock */ = {
@@ -471,9 +452,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8930479222A517100E042DF /* SignInViewController.swift in Sources */,
+				A8930479222A517100E042DF /* MainViewController.swift in Sources */,
 				A8930477222A517100E042DF /* AppDelegate.swift in Sources */,
-				A8841576222BABB40096BFF6 /* QuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -917,7 +897,7 @@
 		};
 		A893049F222A517200E042DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40E9A8399078AED9410E76FE /* Pods-Bee PlusTests.debug.xcconfig */;
+			baseConfigurationReference = EDFF0917A82DBCB771877446 /* Pods-Bee PlusTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -938,7 +918,7 @@
 		};
 		A89304A0222A517200E042DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3763F8E561F0A54B1BFED841 /* Pods-Bee PlusTests.release.xcconfig */;
+			baseConfigurationReference = EAC419830C3D60D88099C8DB /* Pods-Bee PlusTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -959,7 +939,7 @@
 		};
 		A89304A2222A517200E042DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A57B76B0D22CDF21EAE3AC3E /* Pods-Bee PlusUITests.debug.xcconfig */;
+			baseConfigurationReference = 61846D49F4FD08C430C4DFF2 /* Pods-Bee PlusUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -979,7 +959,7 @@
 		};
 		A89304A3222A517200E042DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DF025B39D97CFE1A4969686 /* Pods-Bee PlusUITests.release.xcconfig */;
+			baseConfigurationReference = AB03A71FD7B1E7C24F54F155 /* Pods-Bee PlusUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

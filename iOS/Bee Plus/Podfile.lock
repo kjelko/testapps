@@ -1,18 +1,26 @@
 PODS:
-  - Firebase/Auth (5.19.0):
-    - Firebase/CoreOnly
-    - FirebaseAuth (= 5.4.1)
-  - Firebase/CoreOnly (5.19.0):
-    - FirebaseCore (= 5.4.0)
-  - FirebaseAuth (5.4.1):
-    - FirebaseAuthInterop (~> 1.0)
-    - FirebaseCore (~> 5.2)
-    - GoogleUtilities/Environment (~> 5.2)
-    - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseAuthInterop (1.0.0)
-  - FirebaseCore (5.4.0):
-    - GoogleUtilities/Environment (~> 5.2)
-    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseAppDistribution (0.0.1):
+    - FirebaseCore (~> 6.8)
+    - FirebaseInstallations (~> 1.5)
+    - GoogleDataTransport (~> 7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
+    - GoogleUtilities/UserDefaults (~> 6.7)
+  - FirebaseCore (6.9.1):
+    - FirebaseCoreDiagnostics (~> 1.3)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/Logger (~> 6.7)
+  - FirebaseCoreDiagnostics (1.5.0):
+    - GoogleDataTransport (~> 7.0)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/Logger (~> 6.7)
+    - nanopb (~> 1.30905.0)
+  - FirebaseInstallations (1.5.0):
+    - FirebaseCore (~> 6.8)
+    - GoogleUtilities/Environment (~> 6.7)
+    - GoogleUtilities/UserDefaults (~> 6.7)
+    - PromisesObjC (~> 1.2)
+  - GoogleDataTransport (7.0.0):
+    - nanopb (~> 1.30905.0)
   - GoogleSignIn (4.4.0):
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
@@ -25,40 +33,75 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.2.0)
     - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
   - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
-  - GoogleUtilities/Environment (5.5.0)
-  - GoogleUtilities/Logger (5.5.0):
+  - GoogleUtilities/AppDelegateSwizzler (6.7.1):
     - GoogleUtilities/Environment
-  - GTMSessionFetcher/Core (1.2.1)
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.7.1):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (6.7.1):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/Network (6.7.1):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.7.1)"
+  - GoogleUtilities/Reachability (6.7.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.7.1):
+    - GoogleUtilities/Logger
+  - GTMSessionFetcher/Core (1.4.0)
+  - nanopb (1.30905.0):
+    - nanopb/decode (= 1.30905.0)
+    - nanopb/encode (= 1.30905.0)
+  - nanopb/decode (1.30905.0)
+  - nanopb/encode (1.30905.0)
+  - PromisesObjC (1.2.9)
   - RevealingSplashView (0.6.0)
 
 DEPENDENCIES:
-  - Firebase/Auth
+  - FirebaseAppDistribution (from `https://github.com/firebase/firebase-ios-sdk.git`)
   - GoogleSignIn
   - RevealingSplashView
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Firebase
-    - FirebaseAuth
-    - FirebaseAuthInterop
-    - FirebaseCore
+  https://github.com/CocoaPods/Specs.git:
     - GoogleSignIn
     - GoogleToolboxForMac
+    - RevealingSplashView
+  trunk:
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseInstallations
+    - GoogleDataTransport
     - GoogleUtilities
     - GTMSessionFetcher
-    - RevealingSplashView
+    - nanopb
+    - PromisesObjC
+
+EXTERNAL SOURCES:
+  FirebaseAppDistribution:
+    :git: https://github.com/firebase/firebase-ios-sdk.git
+
+CHECKOUT OPTIONS:
+  FirebaseAppDistribution:
+    :commit: 0b977bd636dd6aa60dff879c4f695a89ffa2681c
+    :git: https://github.com/firebase/firebase-ios-sdk.git
 
 SPEC CHECKSUMS:
-  Firebase: c60d49e9c2630875a96207d15e2affb8364996d1
-  FirebaseAuth: cbb892a66baed025efc179372598941252acf853
-  FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
-  FirebaseCore: 22a79a961c3951ef2f77b67bfbc99e454247b319
+  FirebaseAppDistribution: 80f974d0c4c9769164c7e965d819bc42513d9c08
+  FirebaseCore: 687b8e6a0a4337b898a6326d68254c2f80c143af
+  FirebaseCoreDiagnostics: 7535fe695737f8c5b350584292a70b7f8ff0357b
+  FirebaseInstallations: 3c520c951305cbf9ca54eb891ff9e6d1fd384881
+  GoogleDataTransport: 8a40cb194ad242b6f6dfe72c14fe40fc67c4dcd7
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
-  GoogleUtilities: 6481e6318c5fcabaaa8513ef8120f329055d7c10
-  GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
+  GoogleUtilities: e121a3867449ce16b0e35ddf1797ea7a389ffdf2
+  GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
+  PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
   RevealingSplashView: 40c5a770894459736acdc95655eeba0dd30ce91c
 
-PODFILE CHECKSUM: c9ec8fff3f319e45b48701105895df278d095d9b
+PODFILE CHECKSUM: 5ab2415b7d77c0553ce86ed41b06a8d515d5d631
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.9.1
