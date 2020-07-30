@@ -7,7 +7,6 @@
 //
 
 import FirebaseAppDistribution
-import GoogleSignIn
 import UIKit
 
 class MainViewController: UIViewController {
