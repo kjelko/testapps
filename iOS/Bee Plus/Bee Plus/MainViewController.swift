@@ -17,6 +17,10 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        var currentVersion: UILabel
+        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")
+        let build = Bundle.main.object(forInfoDictionaryKey: kCFBundleVersionKey as String)
+
         view.backgroundColor = .white
 
         checkForUpdateButton = UIButton(frame: CGRect(x: 50, y: 200, width: 300, height: 50))
@@ -25,7 +29,7 @@ class MainViewController: UIViewController {
         checkForUpdateButton!.addTarget(self, action: #selector(checkForUpdateButtonClicked), for: .touchUpInside)
         view.addSubview(checkForUpdateButton!)
 
-        signInOutButton = UIButton(frame: CGRect(x: 50, y: 380, width: 300, height: 50))
+        signInOutButton = UIButton(frame: CGRect(x: 50, y: 300, width: 300, height: 50))
         signInOutButton!.backgroundColor = .lightGray
         let title = AppDistribution.appDistribution().isTesterSignedIn ? "Sign Out" : "Sign In"
         signInOutButton!.setTitle(title, for: .normal)
@@ -33,10 +37,11 @@ class MainViewController: UIViewController {
         signInOutButton!.addTarget(self, action: #selector(signInOutButtonClicked), for: .touchUpInside)
         view.addSubview(signInOutButton!)
 
-        signedInStatus = UILabel(frame: CGRect(x: 50, y: 540, width: 400, height: 60))
-        signedInStatus!.textColor = .black
-        signedInStatus!.backgroundColor = .white
-        signedInStatus!.font = .systemFont(ofSize: 16)
+        currentVersion = UILabel(frame: CGRect(x: 50, y: 400, width: 400, height: 50))
+        currentVersion.text = "Version: \(version ?? "") Build: \(build ?? "")"
+
+        view.addSubview(currentVersion)
+        signedInStatus = UILabel(frame: CGRect(x: 50, y: 500, width: 400, height: 50))
         signedInStatus!.text = AppDistribution.appDistribution().isTesterSignedIn ? "Tester is signed in" : "Tester is signed out"
         view.addSubview(signedInStatus!)
     }
@@ -46,10 +51,13 @@ class MainViewController: UIViewController {
 
         AppDistribution.appDistribution().checkForUpdate { release, error in
             if error != nil {
-                let uiAlert = UIAlertController(title: "Custom:Error", message: "Error during tester sign in! \(error?.localizedDescription ?? "")", preferredStyle: .alert)
+                let uiAlert = UIAlertController(title: "Check For Update", message: "Error during tester sign in! \(error?.localizedDescription ?? "")", preferredStyle: .alert)
                 uiAlert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default) {
                     _ in
                 })
+
+                self.present(uiAlert, animated: true, completion: nil)
+
                 return
             }
 
@@ -62,18 +70,17 @@ class MainViewController: UIViewController {
 
             let title = "New Version Available"
             let message = "Version \(release.displayVersion)(\(release.buildVersion)) is available."
-            let uialert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            let uiAlert = UIAlertController(title: title, message: message, preferredStyle: .alert)
 
-            uialert.addAction(UIAlertAction(title: "Update", style: UIAlertAction.Style.default) {
+            uiAlert.addAction(UIAlertAction(title: "Update", style: UIAlertAction.Style.default) {
                 _ in
                 UIApplication.shared.open(release.downloadURL)
             })
-            uialert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel) {
+            uiAlert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel) {
                 _ in
             })
 
-            // self should be a UIViewController.
-            self.present(uialert, animated: true, completion: nil)
+            self.present(uiAlert, animated: true, completion: nil)
         }
     }
 
