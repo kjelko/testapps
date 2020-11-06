@@ -92,6 +92,13 @@ Or
 fastlane fad_distribute type:"enterprise"
 ```
 
+If you encounter an error like:
+```
+Could not find action, lane or variable 'firebase_app_distribution'.
+```
+Make sure that the path to the Pluginfile from the Gemfile is correct, and that the Pluginfile contains `gem 'fastlane-plugin-firebase_app_distribution'`.
+
+
 ##### Using Firebase CLI
 
 Run the app distro command. See below for command line options.
