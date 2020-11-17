@@ -1,0 +1,25 @@
+default_platform(:ios)
+platform :ios do
+  lane :build_adhoc do |options| do
+      puts "Building adhoc app..."
+      team_id("team_id")
+      register_devices(devices: options[:devices]) if !options[:devices].nil?
+      match(
+          username: "fad-fastlane@google.com",
+          app_identifier: "dev.firebase.FlappySwift",
+	        type: "adhoc",
+          force_for_new_devices: !options[:devices].nil?
+      )
+      gym(
+          scheme: "Flappy Swift",
+          output_name: "Flappy Swift"
+      )
+  end
+  lane :fad_distribute do |options|
+      build_adhoc(options)
+      firebase_app_distribution(
+          app: "app_id",
+          testers: "mallardcrash@gmail.com",
+          release_notes: options[:release_notes]      
+      )
+  end
