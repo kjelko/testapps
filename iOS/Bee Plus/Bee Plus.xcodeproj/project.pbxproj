@@ -554,6 +554,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = FCAH69RY2W;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Bee Plus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -680,6 +681,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = FCAH69RY2W;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Bee Plus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -862,6 +864,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = L8VKXC2S77;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Bee Plus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -885,6 +888,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = L8VKXC2S77;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = "Bee Plus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
