@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func setupFirebase() {
         FirebaseApp.configure()
+        FirebaseConfiguration.shared.setLoggerLevel(FirebaseLoggerLevel.max)
     }
 
     func setupView() {
