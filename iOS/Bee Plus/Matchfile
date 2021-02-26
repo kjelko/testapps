@@ -4,7 +4,7 @@ storage_mode("git")
 
 type("adhoc") # The default type, can be: appstore, adhoc, enterprise or development
 app_identifier(["dev.firebase.Bee-Plus","dev.firebase.Bee-Plus-Enterprise"])
-username("fad-fastlane@google.com") # Your Apple Developer Portal username
+username("fad-apple-developer@google.com") # Your Apple Developer Portal username
 
 # For all available options run `fastlane match --help`
 # Remove the # in the beginning of the line to enable the other options

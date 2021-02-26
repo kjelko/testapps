@@ -3,7 +3,7 @@ platform :ios, '12.1'
 target 'Bee Plus' do
   use_frameworks!
 
-  pod 'FirebaseAppDistribution'
+  pod 'Firebase/AppDistribution'
   pod 'GoogleSignIn'
   pod 'RevealingSplashView'
 

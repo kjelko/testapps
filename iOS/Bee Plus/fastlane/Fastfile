@@ -6,7 +6,7 @@ platform :ios do
       puts "Building adhoc app..."
       team_id("L8VKXC2S77")
       match(
-          username: "fad-fastlane@google.com",
+          username: "fad-apple-developer@google.com",
           app_identifier: "dev.firebase.Bee-Plus",
 	  type: "adhoc"
       )
@@ -20,7 +20,7 @@ platform :ios do
       puts "Building enterprise app..."
       team_id("FCAH69RY2W")
       match(
-          username: "fad-fastlane@google.com",
+          username: "fad-apple-developer@google.com",
           app_identifier: "dev.firebase.Bee-Plus-Enterprise",
           type: "enterprise"
       )
@@ -43,7 +43,7 @@ platform :ios do
       firebase_app_distribution(
           app: "1:461235515410:ios:bcc2b167a9d6b3e0bfe8cb",
           testers: "mallardcrash@gmail.com",
-          release_notes: options[:release_notes]      
+          release_notes: options[:release_notes]
       )
   end
 end
