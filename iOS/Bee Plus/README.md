@@ -18,22 +18,45 @@ Then, you'll need to install the required cocoapods:
 pod install
 ```
 
-### Building the app
-
+### Building the app using fastlane
+This section provides information and steps required to build the adhoc and enterprise build of Bee Plus using Fastlane.
+#### Apple account to build adhoc and enterprise builds
+This are details of the test apple account that has admin access to the Crashlytics developer account. This account is used to build adhoc and enterprise builds of Bee Plus. 
+* **Username**: fad-apple-developer@google.com
+  * NOTE: This email is a google group that App Distribution team will have access to -  https://groups.google.com/a/google.com/g/fad-apple-developer
+* **Password**: Look for "App Distribution Apple developer account password" in Valentine
+* **2 FA phone number**: There are 2 numbers available for 2 FA - 
+  * The number ending with 53 is @pranavrajgopal's personal phone. 
+  * Use the number **ending with 72‬**. This is the Google voice number for mallardcrash@. You can access the 2FA messages by logging into Google voice using mallardcrash credentials.
+* **Account Name**: App Distribution
+* **Birthday and recovery phone**: October 1st 1989, Ask pranavrajgopal@
 #### First time setup
 
-Install Xcode command line tools:
+1. Install Xcode command line tools:
 
-```
-xcode-select --install
-```
+    ```
+    xcode-select --install
+    ```
+    
+2. Install fastlane
 
-Install fastlane:
-
-```
-sudo gem install fastlane -NV
-```
-
+    ```
+    sudo gem install fastlane -NV
+    ```
+    
+3. Install apple distribution certificates
+  * Run the command below with **fad-apple-developer@google.com** as username and password from Valentine
+    ```
+    fastlane cert -u fad-apple-developer@google.com
+    ```
+  * Use the *ends with 72* phone number for 2FA. Login to Google voice using mallardcrash and retrieve the message.
+  * You will be prompted to choose a team. Select **2**
+    ```
+      Multiple teams found on the Developer Portal, please enter the number of the team you want to use:
+      1) FCAH69RY2W "Crashlytics, Inc" (In-House)
+      2) L8VKXC2S77 "Crashlytics, Inc." (Company/Organization)
+    ```
+    
 #### Generate an Adhoc .ipa
 
 ```
@@ -45,10 +68,6 @@ fastlane build_adhoc
 ```
 fastlane build_enterprise
 ```
-
-When prompted for the certificate password, use the password for MallardCrashApple from valentine.
-
-When prompted for the fad-fastlane@google.com password, get the password from valentine.
 
 ### Distributing
 
