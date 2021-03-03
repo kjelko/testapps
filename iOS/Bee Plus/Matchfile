@@ -2,8 +2,9 @@ git_url("git@github.com:crashlytics/app-distro-ios-certs.git")
 
 storage_mode("git")
 
-type("adhoc") # The default type, can be: appstore, adhoc, enterprise or development
-app_identifier(["dev.firebase.Bee-Plus","dev.firebase.Bee-Plus-Enterprise"])
+# Uncomment this to pre-set the default type and app identifier for match command.
+# type("adhoc") # The default type, can be: appstore, adhoc, enterprise or development
+# app_identifier(["dev.firebase.Bee-Plus","dev.firebase.Bee-Plus-Enterprise"])
 username("fad-apple-developer@google.com") # Your Apple Developer Portal username
 
 # For all available options run `fastlane match --help`
