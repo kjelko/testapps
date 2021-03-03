@@ -56,6 +56,8 @@ fastlane build_adhoc
 fastlane build_enterprise
 ```
 
+- When prompted for password and 2FA code for **fad-apple-developer@google.com**, please follow instructions mentioned above.
+
 ### Distributing
 
 Locate the generated .ipa and upload via App Distribution.
