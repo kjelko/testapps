@@ -44,19 +44,6 @@ This are details of the test apple account that has admin access to the Crashlyt
     sudo gem install fastlane -NV
     ```
     
-3. Install apple distribution certificates
-  * Run the command below with **fad-apple-developer@google.com** as username and password from Valentine
-    ```
-    fastlane cert -u fad-apple-developer@google.com
-    ```
-  * Use the *ends with 72* phone number for 2FA. Login to Google voice using mallardcrash and retrieve the message.
-  * You will be prompted to choose a team. Select **2**
-    ```
-      Multiple teams found on the Developer Portal, please enter the number of the team you want to use:
-      1) FCAH69RY2W "Crashlytics, Inc" (In-House)
-      2) L8VKXC2S77 "Crashlytics, Inc." (Company/Organization)
-    ```
-    
 #### Generate an Adhoc .ipa
 
 ```
