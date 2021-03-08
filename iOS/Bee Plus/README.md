@@ -21,9 +21,9 @@ pod install
 ### Building the app using fastlane
 This section provides information and steps required to build the adhoc and enterprise build of Bee Plus using Fastlane.
 #### Apple account to build adhoc and enterprise builds
-This are details of the test apple account that has admin access to the Crashlytics developer account. This account is used to build adhoc and enterprise builds of Bee Plus. 
+Here are the details of the test apple account that has admin access to the Crashlytics developer account. This account is used to build adhoc and enterprise builds of Bee Plus. 
 * **Username**: fad-apple-developer@google.com
-  * NOTE: This email is a google group that App Distribution team will have access to -  https://groups.google.com/a/google.com/g/fad-apple-developer
+  * NOTE: This email is a google group that App Distribution has access to -  https://groups.google.com/a/google.com/g/fad-apple-developer
 * **Password**: Look for "App Distribution Apple developer account password" in Valentine
 * **2 FA phone number**: There are 2 numbers available for 2 FA - 
   * The number ending with 53 is @pranavrajgopal's personal phone. 
@@ -57,6 +57,10 @@ fastlane build_enterprise
 ```
 
 - When prompted for password and 2FA code for **fad-apple-developer@google.com**, please follow instructions mentioned above.
+
+#### Troubleshooting 
+##### Fastlane installation error 
+If you encounter `fatal error: 'ruby/config.h' file not found` during fastlane installation, follow steps documented [here](https://github.com/crashlytics/app-distro-apps/pull/35#pullrequestreview-604210823)
 
 ### Distributing
 
