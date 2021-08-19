@@ -30,4 +30,66 @@ platform :android do
         debug: true
     )
   end
+
+  desc "Pre-release testing script for app distribution fastlane plugin"
+  lane :test_plugin do
+    app_id = "1:1095562434941:android:502210c4f11e5466269414"
+    release_notes = "Release notes for fastlane plugin test run"
+
+    puts "Upload a new APK"
+    increment_version_code
+    gradle(task: "clean assembleDebug", print_command_output: false)
+    firebase_app_distribution(
+        app: app_id,
+        release_notes: release_notes,
+    )
+
+    puts "Upload an existing APK"
+    gradle(task: "clean assembleDebug", print_command_output: false)
+    firebase_app_distribution(
+        app: app_id,
+        release_notes: release_notes,
+    )
+
+    puts "Upload a new AAB"
+    increment_version_code
+    gradle(task: "clean bundleDebug", print_command_output: false)
+    firebase_app_distribution(
+        app: app_id,
+        release_notes: release_notes,
+        android_artifact_type: "AAB",
+    )
+
+    puts "Upload an existing AAB"
+    gradle(task: "clean bundleDebug", print_command_output: false)
+    firebase_app_distribution(
+        app: app_id,
+        release_notes: release_notes,
+        android_artifact_type: "AAB"
+    )
+
+    puts "Create testers passing emails"
+    firebase_app_distribution_add_testers(
+        project_number: 1095562434941,
+        emails: 'fastlane-plugin-tester-1@gmail.com,fastlane-plugin-tester-2@gmail.com'
+    )
+
+    puts "Remove testers passing emails"
+    firebase_app_distribution_remove_testers(
+        project_number: 1095562434941,
+        emails: 'fastlane-plugin-tester-1@gmail.com,fastlane-plugin-tester-2@gmail.com'
+    )
+
+    puts "Create testers passing emails"
+    firebase_app_distribution_add_testers(
+        project_number: 1095562434941,
+        file: '/Users/tundeagboola/dev/app-distro-apps/Android/BeePlus/fastlane/testers.txt'
+    )
+
+    puts "Remove testers passing file"
+    firebase_app_distribution_remove_testers(
+        project_number: 1095562434941,
+        file: '/Users/tundeagboola/dev/app-distro-apps/Android/BeePlus/fastlane/testers.txt'
+    )
+  end
 end

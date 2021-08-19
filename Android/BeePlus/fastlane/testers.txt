@@ -1,0 +1,1 @@
+fastlane-plugin-tester-1@gmail.com,fastlane-plugin-tester-2@gmail.com
