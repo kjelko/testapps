@@ -35,61 +35,69 @@ platform :android do
   lane :test_plugin do
     app_id = "1:1095562434941:android:502210c4f11e5466269414"
     release_notes = "Release notes for fastlane plugin test run"
+    testers = "fadbundlestester@gmail.com"
 
-    puts "Upload a new APK"
-    increment_version_code
+    puts "Upload a new APK. Confirm that the output specifies that this results in a new release."
+    increment_version_code(version_code: rand(1000000))
     gradle(task: "clean assembleDebug", print_command_output: false)
     firebase_app_distribution(
         app: app_id,
         release_notes: release_notes,
+        testers: testers,
     )
 
-    puts "Upload an existing APK"
+    puts "Upload an existing APK. Confirm that the output specifies that this does not result in a new release."
     gradle(task: "clean assembleDebug", print_command_output: false)
     firebase_app_distribution(
         app: app_id,
         release_notes: release_notes,
+        testers: testers
     )
 
-    puts "Upload a new AAB"
-    increment_version_code
+    puts "Upload a new AAB. Confirm that the output specifies that this results in a new release."
+    increment_version_code(version_code: rand(1000000))
     gradle(task: "clean bundleDebug", print_command_output: false)
     firebase_app_distribution(
         app: app_id,
         release_notes: release_notes,
         android_artifact_type: "AAB",
+        testers: testers
     )
 
-    puts "Upload an existing AAB"
+    puts "Upload an existing AAB. Confirm that the output specifies that this does not result in a new release."
     gradle(task: "clean bundleDebug", print_command_output: false)
     firebase_app_distribution(
         app: app_id,
         release_notes: release_notes,
-        android_artifact_type: "AAB"
+        android_artifact_type: "AAB",
+        testers: testers
+    )
+
+    # TODO(tundeagboola) clean up the releases
+
+    emails = 'fastlane-plugin-tester-1@gmail.com,fastlane-plugin-tester-2@gmail.com'
+    puts "Create testers passing emails"
+    firebase_app_distribution_add_testers(
+        project_number: 1095562434941,
+        emails: emails
+    )
+
+    puts "Remove testers passing emails. Confirm that #{emails.split(",").count} were removed."
+    firebase_app_distribution_remove_testers(
+        project_number: 1095562434941,
+        emails: emails
     )
 
     puts "Create testers passing emails"
     firebase_app_distribution_add_testers(
         project_number: 1095562434941,
-        emails: 'fastlane-plugin-tester-1@gmail.com,fastlane-plugin-tester-2@gmail.com'
+        file: "#{Dir.pwd}/testers.txt"
     )
 
-    puts "Remove testers passing emails"
+    puts "Remove testers passing emails. Confirm that #{File.read("#{Dir.pwd}/testers.txt").split(",").count} were removed."
     firebase_app_distribution_remove_testers(
         project_number: 1095562434941,
-        emails: 'fastlane-plugin-tester-1@gmail.com,fastlane-plugin-tester-2@gmail.com'
-    )
-
-    puts "Create testers passing emails"
-    firebase_app_distribution_add_testers(
-        project_number: 1095562434941,
-        file: '/Users/tundeagboola/dev/app-distro-apps/Android/BeePlus/fastlane/testers.txt'
-    )
-
-    puts "Remove testers passing file"
-    firebase_app_distribution_remove_testers(
-        project_number: 1095562434941,
-        file: '/Users/tundeagboola/dev/app-distro-apps/Android/BeePlus/fastlane/testers.txt'
+        file: "#{Dir.pwd}/testers.txt"
     )
   end
 end
