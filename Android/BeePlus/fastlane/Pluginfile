@@ -2,7 +2,7 @@
 #
 # Ensure this file is checked in to source control!
 
-gem 'fastlane-plugin-firebase_app_distribution', '0.3.0.pre.5'
+gem 'fastlane-plugin-firebase_app_distribution'
 
 # Uncomment to use local version of the plugin
 # gem 'fastlane-plugin-firebase_app_distribution', path: '/path/to/repo/fastlane-plugin-firebase_app_distribution
