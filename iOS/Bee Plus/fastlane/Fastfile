@@ -42,8 +42,10 @@ platform :ios do
 
       firebase_app_distribution(
           app: "1:461235515410:ios:bcc2b167a9d6b3e0bfe8cb",
-          testers: "mallardcrash@gmail.com",
-          release_notes: options[:release_notes]
+          testers: "mallardcrash+1@gmail.com, mallardcrash+@gmail.com",
+          release_notes: options[:release_notes],
+          groups: "tunde-group, invalid"
       )
+      # /var/folders/3j/dvkyj9_94rz2qxbggbh2wrs800mqx4/T/d20210824-94838-abh990/profiles/adhoc/AdHoc_dev.firebase.Bee-Plus.mobileprovision
   end
 end
