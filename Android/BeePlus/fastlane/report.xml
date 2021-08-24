@@ -5,17 +5,77 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000463">
+      <testcase classname="fastlane.lanes" name="00: default_platform" time="0.000482">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: clean assembleDebug" time="14.212048">
+      <testcase classname="fastlane.lanes" name="01: increment_version_code" time="0.018373">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: firebase_app_distribution" time="1.865799">
+      <testcase classname="fastlane.lanes" name="02: clean assembleDebug" time="3.825376">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="03: firebase_app_distribution" time="5.275622">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="04: clean assembleDebug" time="4.228877">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="05: firebase_app_distribution" time="3.039553">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="06: increment_version_code" time="0.014223">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="07: clean bundleDebug" time="3.317038">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="08: firebase_app_distribution" time="17.587015">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="09: clean bundleDebug" time="4.089534">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: firebase_app_distribution" time="4.066375">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="11: firebase_app_distribution_add_testers" time="0.468533">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="12: firebase_app_distribution_remove_testers" time="0.599894">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="13: firebase_app_distribution_add_testers" time="0.562472">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="14: firebase_app_distribution_remove_testers" time="0.617627">
         
       </testcase>
     
