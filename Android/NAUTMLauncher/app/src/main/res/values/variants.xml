@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="variants">
+    <item>debug</item>
+    <item>internal</item>
+    <item>beta</item>
+    <item>release</item>
+  </string-array>
+</resources>

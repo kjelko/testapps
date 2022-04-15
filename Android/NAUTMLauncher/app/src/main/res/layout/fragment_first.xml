@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".FirstFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+
+  <TextView
+      android:id="@+id/textview_first"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/app_description"
+      android:textAlignment="center"
+      android:layout_marginBottom="60dp"/>
+
+  <GridLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:rowCount="3"
+      android:columnCount="2">
+
+    <TextView
+        android:id="@+id/build_version_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/build_version_label_text"
+        android:layout_marginRight="20dp"
+        />
+
+
+    <EditText
+        android:id="@+id/build_version"
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/rollout_bucket_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rollout_bucket_label_text"
+        android:layout_marginRight="20dp"
+        />
+
+    <EditText
+        android:id="@+id/rollout_bucket"
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:inputType="number"
+        android:text="-1"/>
+
+    <TextView
+        android:id="@+id/variant_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/variant_label_text"
+        android:layout_marginRight="20dp"
+        />
+
+    <EditText
+        android:id="@+id/variant"
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:inputType="text"
+        android:text="internal"/>
+  </GridLayout>
+
+  <Button
+      android:id="@+id/launch_nautm_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/launch_nautm"
+      android:layout_marginTop="60dp"/>
+</LinearLayout>
