@@ -6,18 +6,17 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.RadioButton
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import dev.firebase.appdistribution.nautmlauncher.databinding.FragmentFirstBinding
+import dev.firebase.appdistribution.nautmlauncher.databinding.FragmentLaunchNautmBinding
 import java.lang.IllegalArgumentException
 
 
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
-class FirstFragment : Fragment() {
+/** The main fragment for the application. */
+class LaunchNautmFragment : Fragment() {
 
-  private var _binding: FragmentFirstBinding? = null
+  private var _binding: FragmentLaunchNautmBinding? = null
   // This property is only valid between onCreateView and onDestroyView.
   private val binding get() = _binding!!
 
@@ -25,14 +24,12 @@ class FirstFragment : Fragment() {
     inflater: LayoutInflater, container: ViewGroup?,
     savedInstanceState: Bundle?,
   ): View? {
-    _binding = FragmentFirstBinding.inflate(inflater, container, false)
+    _binding = FragmentLaunchNautmBinding.inflate(inflater, container, false)
     return binding.root
   }
 
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
-
-    Log.e(TAG, "Setting on click listener")
     binding.launchNautmButton.setOnClickListener { launchNautm() }
   }
 
@@ -42,7 +39,7 @@ class FirstFragment : Fragment() {
   }
 
   private fun launchNautm() {
-    Log.e(TAG, "Launching NAUTM")
+    Log.i(TAG, "Launching NAUTM")
     val launchIntent: Intent? = requireContext().packageManager.getLaunchIntentForPackage(packageName())
 
     if (launchIntent == null) {
@@ -57,19 +54,18 @@ class FirstFragment : Fragment() {
     if (binding.rolloutBucket.text.isNotEmpty()) {
       launchIntent.putExtra("rolloutBucketOverride", binding.rolloutBucket.text.toString().toInt())
     }
-    Log.e(TAG, "Launching intent: ${launchIntent}")
+    Log.i(TAG, "Launching intent: ${launchIntent}")
     startActivity(launchIntent)
   }
 
   private fun packageName(): String {
-    return when (binding.variant.text.toString()) {
-      "release" -> "dev.firebase.appdistribution"
-      "debug", "internal", "beta" -> "dev.firebase.appdistribution.${binding.variant.text}"
-      else -> throw IllegalArgumentException("Invalid variant: '${binding.variant.text}'. Must be one of 'debug', 'internal', 'beta', or 'release'.")
-    }
+    if (binding.radioBeta.isChecked) { return "dev.firebase.appdistribution.beta"; }
+    else if (binding.radioInternal.isChecked) { return "dev.firebase.appdistribution.internal"; }
+    else if (binding.radioDebug.isChecked) { return "dev.firebase.appdistribution.debug"; }
+    else { return "dev.firebase.appdistribution"; }
   }
 
   companion object {
-    const val TAG = "FirstFragment"
+    const val TAG = "LaunchNautmFragment"
   }
 }

@@ -5,17 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="40dp"
-    tools:context=".FirstFragment"
+    tools:context=".LaunchNautmFragment"
     android:orientation="vertical"
     android:gravity="center">
-
-  <TextView
-      android:id="@+id/textview_first"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/app_description"
-      android:textAlignment="center"
-      android:layout_marginBottom="60dp"/>
 
   <GridLayout
       android:layout_width="wrap_content"
@@ -50,7 +42,7 @@
         android:id="@+id/rollout_bucket"
         android:layout_height="wrap_content"
         android:layout_width="100dp"
-        android:inputType="number"
+        android:inputType="text"
         android:text="-1"/>
 
     <TextView
@@ -61,12 +53,28 @@
         android:layout_marginRight="20dp"
         />
 
-    <EditText
-        android:id="@+id/variant"
+    <RadioGroup
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_width="100dp"
-        android:inputType="text"
-        android:text="internal"/>
+        android:orientation="vertical">
+      <RadioButton android:id="@+id/radio_release"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/release_label"
+          android:checked="true"/>
+      <RadioButton android:id="@+id/radio_beta"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/beta_label"/>
+      <RadioButton android:id="@+id/radio_internal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/internal_label"/>
+      <RadioButton android:id="@+id/radio_debug"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/debug_label"/>
+    </RadioGroup>
   </GridLayout>
 
   <Button

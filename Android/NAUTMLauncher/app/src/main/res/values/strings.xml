@@ -1,17 +1,14 @@
 <resources>
   <string name="app_name">NAUTM Launcher</string>
-  <string name="action_settings">Settings</string>
-  <!-- Strings used for fragments for navigation -->
-  <string name="first_fragment_label">First Fragment</string>
-  <string name="second_fragment_label">Second Fragment</string>
-  <string name="previous">Previous</string>
-  <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-
-  <string name="app_description">This app launches NAUTM while overriding various settings that are useful for testing</string>
   <string name="launch_nautm">Launch NAUTM</string>
 
   <string name="build_version_label_text">Build version</string>
-  <string name="rollout_bucket_label_text">Rollout bucket (0-1000, or -1 to force)</string>
+  <string name="rollout_bucket_label_text">Rollout bucket</string>
   <string name="variant_label_text">Variant</string>
+
+  <string name="release_label">Release</string>
+  <string name="beta_label">Beta</string>
+  <string name="internal_label">Internal</string>
+  <string name="debug_label">Debug</string>
 
 </resources>
