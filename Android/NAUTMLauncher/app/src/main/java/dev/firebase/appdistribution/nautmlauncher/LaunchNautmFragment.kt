@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import dev.firebase.appdistribution.nautmlauncher.databinding.FragmentLaunchNautmBinding
 import java.lang.IllegalArgumentException
+import java.lang.IllegalStateException
 
 
 /** The main fragment for the application. */
@@ -59,10 +60,11 @@ class LaunchNautmFragment : Fragment() {
   }
 
   private fun packageName(): String {
-    if (binding.radioBeta.isChecked) { return "dev.firebase.appdistribution.beta"; }
-    else if (binding.radioInternal.isChecked) { return "dev.firebase.appdistribution.internal"; }
-    else if (binding.radioDebug.isChecked) { return "dev.firebase.appdistribution.debug"; }
-    else { return "dev.firebase.appdistribution"; }
+    return if (binding.radioRelease.isChecked) { "dev.firebase.appdistribution"}
+    else if (binding.radioBeta.isChecked) { "dev.firebase.appdistribution.beta"; }
+    else if (binding.radioInternal.isChecked) { "dev.firebase.appdistribution.internal"; }
+    else if (binding.radioDebug.isChecked) { "dev.firebase.appdistribution.debug"; }
+    else { throw IllegalStateException("There should always be exactly one variant selected"); }
   }
 
   companion object {
