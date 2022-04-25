@@ -1,0 +1,14 @@
+<resources>
+  <string name="app_name">NAUTM Launcher</string>
+  <string name="launch_nautm">Launch NAUTM</string>
+
+  <string name="build_version_label_text">Build version</string>
+  <string name="rollout_bucket_label_text">Rollout bucket</string>
+  <string name="variant_label_text">Variant</string>
+
+  <string name="release_label">Release</string>
+  <string name="beta_label">Beta</string>
+  <string name="internal_label">Internal</string>
+  <string name="debug_label">Debug</string>
+
+</resources>
