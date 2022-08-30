@@ -4,7 +4,7 @@ target 'Bee Plus' do
   use_frameworks!
 
   pod 'Firebase/AppDistribution'
-  pod 'GoogleSignIn'
+  pod 'GoogleSignIn', '~> 5.0'
   pod 'RevealingSplashView'
 
   target 'Bee PlusTests' do
