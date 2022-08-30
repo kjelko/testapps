@@ -70,10 +70,6 @@ DEPENDENCIES:
   - RevealingSplashView
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - GoogleSignIn
-    - GoogleToolboxForMac
-    - RevealingSplashView
   trunk:
     - Firebase
     - FirebaseAppDistribution
@@ -81,10 +77,13 @@ SPEC REPOS:
     - FirebaseCoreDiagnostics
     - FirebaseInstallations
     - GoogleDataTransport
+    - GoogleSignIn
+    - GoogleToolboxForMac
     - GoogleUtilities
     - GTMSessionFetcher
     - nanopb
     - PromisesObjC
+    - RevealingSplashView
 
 SPEC CHECKSUMS:
   Firebase: e1e089d9aac215a52442583f818ab61de3c4581b
@@ -103,4 +102,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: e4810983a674a6b97d80f6f09fafcb64e58f8212
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.3
