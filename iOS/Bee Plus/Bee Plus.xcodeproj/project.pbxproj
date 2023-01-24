@@ -3,19 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11F73F7D509F164477DD37B4 /* Pods_Bee_Plus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE43753609424A51C1BF922 /* Pods_Bee_Plus.framework */; };
-		987AF1486D1E23FA1CBBC5D5 /* Pods_Bee_PlusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2753DC7FA6DFA420E1A5D090 /* Pods_Bee_PlusTests.framework */; };
-		9EED70FE2242000F001ED663 /* Pods-Bee Plus.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9EED70FD2242000E001ED663 /* Pods-Bee Plus.release.xcconfig */; };
-		9EED7102224205BD001ED663 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9EED7101224205BD001ED663 /* Debug.xcconfig */; };
-		9EED7104224205CF001ED663 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9EED7103224205CF001ED663 /* Release.xcconfig */; };
-		9EED710622420614001ED663 /* Debug Enterprise.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9EED710522420614001ED663 /* Debug Enterprise.xcconfig */; };
-		9EED710822420624001ED663 /* Release Enterprise.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9EED710722420623001ED663 /* Release Enterprise.xcconfig */; };
-		9F1EBA55B06BA30FE9A91379 /* Pods_Bee_PlusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E25C016F09B64094E57B50 /* Pods_Bee_PlusUITests.framework */; };
 		A867419224D37D97009E5C2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A867419124D37D97009E5C2D /* GoogleService-Info.plist */; };
+		A86EBB6728525F880009D07E /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A86EBB6628525F880009D07E /* FirebaseAppDistribution-Beta */; };
 		A8930477222A517100E042DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8930476222A517100E042DF /* AppDelegate.swift */; };
 		A8930479222A517100E042DF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8930478222A517100E042DF /* MainViewController.swift */; };
 		A893047E222A517200E042DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A893047D222A517200E042DF /* Assets.xcassets */; };
@@ -41,22 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		149EA2783B0ED6B969685BBB /* Pods-Bee Plus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus.debug.xcconfig"; sourceTree = "<group>"; };
-		2753DC7FA6DFA420E1A5D090 /* Pods_Bee_PlusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bee_PlusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3763F8E561F0A54B1BFED841 /* Pods-Bee PlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.release.xcconfig"; sourceTree = "<group>"; };
-		3DF025B39D97CFE1A4969686 /* Pods-Bee PlusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.release.xcconfig"; sourceTree = "<group>"; };
-		40E9A8399078AED9410E76FE /* Pods-Bee PlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.debug.xcconfig"; sourceTree = "<group>"; };
-		44EF85ABE9A02FA1363DA532 /* Pods-Bee PlusTests.release enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.release enterprise.xcconfig"; path = "Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.release enterprise.xcconfig"; sourceTree = "<group>"; };
-		61846D49F4FD08C430C4DFF2 /* Pods-Bee PlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		73AA168C18DE2A9623E637BB /* Pods-Bee Plus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.release.xcconfig"; path = "Target Support Files/Pods-Bee Plus/Pods-Bee Plus.release.xcconfig"; sourceTree = "<group>"; };
-		93E25C016F09B64094E57B50 /* Pods_Bee_PlusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bee_PlusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DC8E99785A9B336D6F0642A /* Pods-Bee Plus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.debug.xcconfig"; path = "Target Support Files/Pods-Bee Plus/Pods-Bee Plus.debug.xcconfig"; sourceTree = "<group>"; };
-		9EED70FD2242000E001ED663 /* Pods-Bee Plus.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.release.xcconfig"; path = "Target Support Files/Pods-Bee Plus/Pods-Bee Plus.release.xcconfig"; sourceTree = "<group>"; };
 		9EED7101224205BD001ED663 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		9EED7103224205CF001ED663 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		9EED710522420614001ED663 /* Debug Enterprise.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug Enterprise.xcconfig"; sourceTree = "<group>"; };
 		9EED710722420623001ED663 /* Release Enterprise.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Release Enterprise.xcconfig"; sourceTree = "<group>"; };
-		A57B76B0D22CDF21EAE3AC3E /* Pods-Bee PlusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A867419124D37D97009E5C2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A8930473222A517100E042DF /* Bee Plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bee Plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8930476222A517100E042DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,16 +50,6 @@
 		A8930492222A517200E042DF /* Bee PlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bee PlusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8930496222A517200E042DF /* Bee_PlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bee_PlusUITests.swift; sourceTree = "<group>"; };
 		A8930498222A517200E042DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB03A71FD7B1E7C24F54F155 /* Pods-Bee PlusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.release.xcconfig"; path = "Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.release.xcconfig"; sourceTree = "<group>"; };
-		BC96D208D2921C596AB30210 /* Pods-Bee PlusUITests.release enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.release enterprise.xcconfig"; path = "Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.release enterprise.xcconfig"; sourceTree = "<group>"; };
-		C2D04403E5F52FF0BCDF482B /* Pods-Bee PlusUITests.debug enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusUITests.debug enterprise.xcconfig"; path = "Target Support Files/Pods-Bee PlusUITests/Pods-Bee PlusUITests.debug enterprise.xcconfig"; sourceTree = "<group>"; };
-		C8C16D36033B340BA43A7CA1 /* Pods-Bee Plus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bee Plus/Pods-Bee Plus.release.xcconfig"; sourceTree = "<group>"; };
-		DDE43753609424A51C1BF922 /* Pods_Bee_Plus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bee_Plus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E08B09B980B50E7FC9888365 /* Pods-Bee PlusTests.debug enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.debug enterprise.xcconfig"; path = "Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.debug enterprise.xcconfig"; sourceTree = "<group>"; };
-		E34F4DE0875ED4941FAD61D6 /* Pods-Bee Plus.debug enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.debug enterprise.xcconfig"; path = "Target Support Files/Pods-Bee Plus/Pods-Bee Plus.debug enterprise.xcconfig"; sourceTree = "<group>"; };
-		EAC419830C3D60D88099C8DB /* Pods-Bee PlusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.release.xcconfig"; path = "Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.release.xcconfig"; sourceTree = "<group>"; };
-		EDFF0917A82DBCB771877446 /* Pods-Bee PlusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee PlusTests.debug.xcconfig"; path = "Target Support Files/Pods-Bee PlusTests/Pods-Bee PlusTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F413A739B93118643BB05D6D /* Pods-Bee Plus.release enterprise.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bee Plus.release enterprise.xcconfig"; path = "Target Support Files/Pods-Bee Plus/Pods-Bee Plus.release enterprise.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11F73F7D509F164477DD37B4 /* Pods_Bee_Plus.framework in Frameworks */,
+				A86EBB6728525F880009D07E /* FirebaseAppDistribution-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				987AF1486D1E23FA1CBBC5D5 /* Pods_Bee_PlusTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,39 +72,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F1EBA55B06BA30FE9A91379 /* Pods_Bee_PlusUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		11B0C145715D89D7715A890E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9DC8E99785A9B336D6F0642A /* Pods-Bee Plus.debug.xcconfig */,
-				73AA168C18DE2A9623E637BB /* Pods-Bee Plus.release.xcconfig */,
-				EDFF0917A82DBCB771877446 /* Pods-Bee PlusTests.debug.xcconfig */,
-				EAC419830C3D60D88099C8DB /* Pods-Bee PlusTests.release.xcconfig */,
-				9EED70FD2242000E001ED663 /* Pods-Bee Plus.release.xcconfig */,
-				61846D49F4FD08C430C4DFF2 /* Pods-Bee PlusUITests.debug.xcconfig */,
-				AB03A71FD7B1E7C24F54F155 /* Pods-Bee PlusUITests.release.xcconfig */,
-				149EA2783B0ED6B969685BBB /* Pods-Bee Plus.debug.xcconfig */,
-				E34F4DE0875ED4941FAD61D6 /* Pods-Bee Plus.debug enterprise.xcconfig */,
-				C8C16D36033B340BA43A7CA1 /* Pods-Bee Plus.release.xcconfig */,
-				F413A739B93118643BB05D6D /* Pods-Bee Plus.release enterprise.xcconfig */,
-				40E9A8399078AED9410E76FE /* Pods-Bee PlusTests.debug.xcconfig */,
-				E08B09B980B50E7FC9888365 /* Pods-Bee PlusTests.debug enterprise.xcconfig */,
-				3763F8E561F0A54B1BFED841 /* Pods-Bee PlusTests.release.xcconfig */,
-				44EF85ABE9A02FA1363DA532 /* Pods-Bee PlusTests.release enterprise.xcconfig */,
-				A57B76B0D22CDF21EAE3AC3E /* Pods-Bee PlusUITests.debug.xcconfig */,
-				C2D04403E5F52FF0BCDF482B /* Pods-Bee PlusUITests.debug enterprise.xcconfig */,
-				3DF025B39D97CFE1A4969686 /* Pods-Bee PlusUITests.release.xcconfig */,
-				BC96D208D2921C596AB30210 /* Pods-Bee PlusUITests.release enterprise.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		9EED71002242058A001ED663 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,8 +96,6 @@
 				A893048A222A517200E042DF /* Bee PlusTests */,
 				A8930495222A517200E042DF /* Bee PlusUITests */,
 				A8930474222A517100E042DF /* Products */,
-				11B0C145715D89D7715A890E /* Pods */,
-				F8CB8C02BA2E7291183D7D73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -199,16 +140,6 @@
 			path = "Bee PlusUITests";
 			sourceTree = "<group>";
 		};
-		F8CB8C02BA2E7291183D7D73 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DDE43753609424A51C1BF922 /* Pods_Bee_Plus.framework */,
-				2753DC7FA6DFA420E1A5D090 /* Pods_Bee_PlusTests.framework */,
-				93E25C016F09B64094E57B50 /* Pods_Bee_PlusUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,18 +147,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A893049B222A517200E042DF /* Build configuration list for PBXNativeTarget "Bee Plus" */;
 			buildPhases = (
-				F64D77E5425F9EB2067B91D2 /* [CP] Check Pods Manifest.lock */,
 				A893046F222A517100E042DF /* Sources */,
 				A8930470222A517100E042DF /* Frameworks */,
 				A8930471222A517100E042DF /* Resources */,
-				68D66B10C395E8244B49E1E1 /* [CP] Embed Pods Frameworks */,
-				C498A9AC3F66AF4007960160 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Bee Plus";
+			packageProductDependencies = (
+				A86EBB6628525F880009D07E /* FirebaseAppDistribution-Beta */,
+			);
 			productName = "Bee Plus";
 			productReference = A8930473222A517100E042DF /* Bee Plus.app */;
 			productType = "com.apple.product-type.application";
@@ -236,7 +167,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A893049E222A517200E042DF /* Build configuration list for PBXNativeTarget "Bee PlusTests" */;
 			buildPhases = (
-				4B66E5AFCE6100545A96C908 /* [CP] Check Pods Manifest.lock */,
 				A8930483222A517200E042DF /* Sources */,
 				A8930484222A517200E042DF /* Frameworks */,
 				A8930485222A517200E042DF /* Resources */,
@@ -255,7 +185,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A89304A1222A517200E042DF /* Build configuration list for PBXNativeTarget "Bee PlusUITests" */;
 			buildPhases = (
-				CBCEFCA4E0F20B01A4AE4FA5 /* [CP] Check Pods Manifest.lock */,
 				A893048E222A517200E042DF /* Sources */,
 				A893048F222A517200E042DF /* Frameworks */,
 				A8930490222A517200E042DF /* Resources */,
@@ -277,7 +206,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = "Firebase Dev";
 				TargetAttributes = {
 					A8930472222A517100E042DF = {
@@ -306,6 +235,9 @@
 				Base,
 			);
 			mainGroup = A893046A222A517100E042DF;
+			packageReferences = (
+				A86EBB6528525F880009D07E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A8930474222A517100E042DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -322,12 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EED710622420614001ED663 /* Debug Enterprise.xcconfig in Resources */,
-				9EED7102224205BD001ED663 /* Debug.xcconfig in Resources */,
-				9EED70FE2242000F001ED663 /* Pods-Bee Plus.release.xcconfig in Resources */,
-				9EED710822420624001ED663 /* Release Enterprise.xcconfig in Resources */,
 				A893047E222A517200E042DF /* Assets.xcassets in Resources */,
-				9EED7104224205CF001ED663 /* Release.xcconfig in Resources */,
 				A867419224D37D97009E5C2D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,109 +274,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4B66E5AFCE6100545A96C908 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Bee PlusTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		68D66B10C395E8244B49E1E1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C498A9AC3F66AF4007960160 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bee Plus/Pods-Bee Plus-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CBCEFCA4E0F20B01A4AE4FA5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Bee PlusUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F64D77E5425F9EB2067B91D2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Bee Plus-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A893046F222A517100E042DF /* Sources */ = {
@@ -541,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -579,7 +403,6 @@
 		};
 		9EED70EE2241E25F001ED663 /* Release Enterprise */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44EF85ABE9A02FA1363DA532 /* Pods-Bee PlusTests.release enterprise.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -602,7 +425,6 @@
 		};
 		9EED70EF2241E25F001ED663 /* Release Enterprise */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC96D208D2921C596AB30210 /* Pods-Bee PlusUITests.release enterprise.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
@@ -676,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -713,7 +535,6 @@
 		};
 		9EED70F22241E2A2001ED663 /* Debug Enterprise */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E08B09B980B50E7FC9888365 /* Pods-Bee PlusTests.debug enterprise.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -736,7 +557,6 @@
 		};
 		9EED70F32241E2A2001ED663 /* Debug Enterprise */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2D04403E5F52FF0BCDF482B /* Pods-Bee PlusUITests.debug enterprise.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
@@ -810,7 +630,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -868,7 +688,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -884,7 +704,7 @@
 			baseConfigurationReference = 9EED7101224205BD001ED663 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = L8VKXC2S77;
@@ -898,7 +718,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.firebase.Bee-Plus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc dev.firebase.Bee-Plus";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development dev.firebase.Bee-Plus";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -909,7 +729,7 @@
 			baseConfigurationReference = 9EED7103224205CF001ED663 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = L8VKXC2S77;
@@ -923,7 +743,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.firebase.Bee-Plus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc dev.firebase.Bee-Plus";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development dev.firebase.Bee-Plus";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -931,7 +751,6 @@
 		};
 		A893049F222A517200E042DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDFF0917A82DBCB771877446 /* Pods-Bee PlusTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -954,7 +773,6 @@
 		};
 		A89304A0222A517200E042DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAC419830C3D60D88099C8DB /* Pods-Bee PlusTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -977,7 +795,6 @@
 		};
 		A89304A2222A517200E042DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61846D49F4FD08C430C4DFF2 /* Pods-Bee PlusUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
@@ -999,7 +816,6 @@
 		};
 		A89304A3222A517200E042DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB03A71FD7B1E7C24F54F155 /* Pods-Bee PlusUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
@@ -1067,6 +883,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A86EBB6528525F880009D07E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk/";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A86EBB6628525F880009D07E /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A86EBB6528525F880009D07E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A893046B222A517100E042DF /* Project object */;
 }
