@@ -26,7 +26,7 @@ platform :android do
     gradle(task: "clean assembleDebug")
 
     firebase_app_distribution(
-        app: "1:77202193010:android:9445c2e6f55bde10ef20eb",
+        app: "1:461235515410:android:c883034d281eb56a",
         debug: true
     )
   end
