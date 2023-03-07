@@ -1,0 +1,63 @@
+{
+  "name": "FirebaseAppDistributionInternal",
+  "version": "10.5.0-beta",
+  "summary": "Firebase App Distribution Internal for Swift implementations",
+  "description": "Not for public use.\nSDK for Swift code in Firebase App Distribution.",
+  "homepage": "https://firebase.google.com",
+  "license": {
+    "type": "Apache-2.0",
+    "file": "LICENSE"
+  },
+  "authors": "Google, Inc.",
+  "source": {
+    "git": "https://github.com/firebase/firebase-ios-sdk.git",
+    "tag": "CocoaPods-10.5.0-beta"
+  },
+  "social_media_url": "https://twitter.com/Firebase",
+  "swift_versions": "5.3",
+  "platforms": {
+    "ios": "11.0"
+  },
+  "cocoapods_version": ">= 1.4.0",
+  "prefix_header_file": false,
+  "frameworks": "Foundation",
+  "ios": {
+    "frameworks": "UIKit",
+    "resource_bundles": {
+      "AppDistributionInternalResources": [
+        "FirebaseAppDistributionInternal/Resources/FIRAppDistributionInternalStoryboard.storyboard"
+      ]
+    }
+  },
+  "source_files": [
+    "FirebaseAppDistributionInternal/Sources/**/*.{swift,h,m}"
+  ],
+  "dependencies": {
+    "FirebaseCore": [
+      "~> 10.0"
+    ],
+    "FirebaseCoreExtension": [
+      "~> 10.0"
+    ],
+    "FirebaseInstallations": [
+      "~> 10.0"
+    ]
+  },
+  "pod_target_xcconfig": {
+    "GCC_C_LANGUAGE_STANDARD": "c99",
+    "HEADER_SEARCH_PATHS": "\"${PODS_TARGET_SRCROOT}\""
+  },
+  "testspecs": [
+    {
+      "name": "unit",
+      "test_type": "unit",
+      "scheme": {
+        "code_coverage": true
+      },
+      "source_files": [
+        "FirebaseAppDistributionInternal/Tests/Unit/**/*.swift"
+      ]
+    }
+  ],
+  "swift_version": "5.3"
+}

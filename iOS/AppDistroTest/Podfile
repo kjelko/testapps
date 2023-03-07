@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'AppDistroTest' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for AppDistroTest
+  pod 'FirebaseAppDistribution', :path => '/Users/tdeshpande/source/firebase-ios-sdk'
+  pod 'FirebaseAppDistributionInternal', :path => '/Users/tdeshpande/source/firebase-ios-sdk'
+
+  target 'AppDistroTestTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AppDistroTestUITests' do
+    # Pods for testing
+  end
+
+end

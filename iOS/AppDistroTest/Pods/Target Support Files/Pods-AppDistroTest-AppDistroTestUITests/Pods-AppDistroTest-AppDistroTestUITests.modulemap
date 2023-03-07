@@ -1,0 +1,6 @@
+framework module Pods_AppDistroTest_AppDistroTestUITests {
+  umbrella header "Pods-AppDistroTest-AppDistroTestUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
