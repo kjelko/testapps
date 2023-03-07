@@ -26,7 +26,7 @@ platform :android do
     gradle(task: "clean assembleDebug")
 
     firebase_app_distribution(
-        app: "1:77202193010:android:9445c2e6f55bde10ef20eb",
+        app: "1:461235515410:android:c883034d281eb56a",
         debug: true
     )
   end
@@ -43,12 +43,13 @@ platform :android do
     puts "Upload a new APK. Confirm that the output specifies that this results in a new release."
     increment_version_code(version_code: rand(1000000))
     gradle(task: "clean assembleDebug", print_command_output: false)
-    firebase_app_distribution(
+    release = firebase_app_distribution(
         app: app_id,
         release_notes: release_notes,
         testers: testers,
         groups: groups,
     )
+    puts "Uploaded release #{release[:displayVersion]} (#{release[:buildVersion]})"
 
     puts "Upload an existing APK. Confirm that the output specifies that this does not result in a new release."
     gradle(task: "clean assembleDebug", print_command_output: false)
@@ -58,6 +59,12 @@ platform :android do
         testers: new_testers,
         groups: new_groups,
     )
+
+    puts "Fetching latest release. Confirm latest release is still the previously uploaded release"
+    release = firebase_app_distribution_get_latest_release(
+        app: app_id
+    )
+    puts "Latest release is #{release[:displayVersion]} (#{release[:buildVersion]})"
 
     puts "Upload a new AAB. Confirm that the output specifies that this results in a new release."
     increment_version_code(version_code: rand(1000000))
@@ -70,6 +77,9 @@ platform :android do
         groups: groups,
     )
 
+    release = lane_context[SharedValues::FIREBASE_APP_DISTRO_RELEASE]
+    puts "Uploaded release #{release[:displayVersion]} (#{release[:buildVersion]})"
+
     puts "Upload an existing AAB. Confirm that the output specifies that this does not result in a new release."
     gradle(task: "clean bundleDebug", print_command_output: false)
     firebase_app_distribution(
@@ -79,6 +89,13 @@ platform :android do
         testers: new_testers,
         groups: new_groups,
     )
+
+    puts "Fetching latest release. Confirm latest release is still the previously uploaded release"
+    firebase_app_distribution_get_latest_release(
+        app: app_id
+    )
+    release = lane_context[SharedValues::FIREBASE_APP_DISTRO_LATEST_RELEASE]
+    puts "Latest release is #{release[:displayVersion]} (#{release[:buildVersion]})"
 
     # TODO(tundeagboola) clean up the releases
 
