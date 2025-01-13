@@ -2,11 +2,11 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.firebase.appdistribution'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 33
     defaultConfig {
         applicationId "dev.firebase.beeplus"
         minSdkVersion 19
-        targetSdkVersion 29
+        targetSdkVersion 33
         versionCode 3
         versionName "3.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -21,6 +21,14 @@ android {
                 releaseNotes="hi"
                 testers="abarone@google.com"
                 groups="mallard-group"
+            }
+        }
+        debug {
+            firebaseAppDistribution {
+                // This app has AAB uploads enabled
+                appId="1:1095562434941:android:502210c4f11e5466269414"
+                testCases="case1,case2"
+                testDevices="model=MediumPhone.arm,version=34,orientation=portrait,locale=en_US"
             }
         }
     }
