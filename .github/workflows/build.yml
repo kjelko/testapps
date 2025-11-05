@@ -27,5 +27,10 @@ jobs:
     - name: Install Firebase CLI
       run: npm install -g firebase-tools
 
+    - name: Authenticate with Google Cloud
+      uses: google-github-actions/auth@v2
+      with:
+        credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_WATA }}
+
     - name: Run Firebase command
       run: firebase appdistribution:distribute Android/BeePlus/app/build/outputs/apk/debug/app-debug.apk --app 1:454576928400:android:7934c2af24bbeaca6eca15 --test-devices "model=tokay,version=36,locale=en,orientation=portrait;" --test-case-ids=smoke-test
