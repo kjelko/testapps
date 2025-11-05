@@ -79,6 +79,14 @@
         android:orientation="vertical">
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Welcome to BeePlus"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/signed_in_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
