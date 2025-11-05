@@ -28,4 +28,4 @@ jobs:
       run: npm install -g firebase-tools
 
     - name: Run Firebase command
-      run: firebase appdistribution:test --app 1:454576928400:android:7934c2af24bbeaca6eca15 --apk Android/BeePlus/app/build/outputs/apk/debug/app-debug.apk
+      run: firebase appdistribution:distribute Android/BeePlus/app/build/outputs/apk/debug/app-debug.apk --app 1:454576928400:android:7934c2af24bbeaca6eca15 --test-devices "model=tokay,version=36,locale=en,orientation=portrait;" --test-case-ids=smoke-test
