@@ -33,4 +33,4 @@ jobs:
         credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_WATA }}
 
     - name: Run Firebase command
-      run: firebase appdistribution:distribute Android/BeePlus/app/build/outputs/apk/debug/app-debug.apk --app 1:454576928400:android:7934c2af24bbeaca6eca15 --test-devices "model=tokay,version=36,locale=en,orientation=portrait;" --test-case-ids=smoke-test
+      run: firebase appdistribution:distribute Android/BeePlus/app/build/outputs/apk/debug/app-debug.apk --app 1:1027195595844:android:db96d3a226103bb1aca011 --test-devices "model=tokay,version=36,locale=en,orientation=portrait;" --test-case-ids=smoke-test
